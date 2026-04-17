@@ -1,0 +1,64 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 1294,
+    "output_tokens": 272,
+    "total_tokens": 1566
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "fast",
+  "critic_ran": false,
+  "critic_result": {},
+  "dataset_key": "public_lev_1",
+  "decider_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.85,
+    "final_ids": [
+      "WNACROYX"
+    ],
+    "reason": "WNACROYX has the highest risk hint and significant negative deltas in both activity and sleep, making it a clear case for prioritization."
+  },
+  "effective_max_output_ids": 3,
+  "extractor_result": {},
+  "final_ids": [
+    "WNACROYX"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 1,
+    "flagged_ratio": 0.2,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "af346cc8b4318c21bf24743f8b946e501c08b826579d4b0e5be0129ce6f6a89e",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP82CWZYXD5BK1TXV6VT9RT2"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Overlooking citizens with lower risk hints but significant well-being declines.",
+      "Misinterpreting activity and sleep metrics due to external factors.",
+      "Insufficient budget leading to incomplete assessments."
+    ],
+    "guardrails": [
+      "Ensure all candidates are evaluated based on the latest data.",
+      "Limit recommendations to the top 5 candidates to maintain focus.",
+      "Cross-verify findings with additional qualitative data if available."
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta",
+      "exposure_delta"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Identify citizens with the highest risk hints and suboptimal well-being trajectories based on activity, sleep, and exposure metrics. Prioritize those with significant negative deltas in activity and sleep."
+  },
+  "scorer_result": {},
+  "session_id": "VNBrain2-01KP82CWZYXD5BK1TXV6VT9RT2",
+  "status": "success"
+}

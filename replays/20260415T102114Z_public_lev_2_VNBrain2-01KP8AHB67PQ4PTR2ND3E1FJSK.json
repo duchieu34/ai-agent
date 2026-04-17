@@ -1,0 +1,326 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 8759,
+    "output_tokens": 958,
+    "total_tokens": 9717
+  },
+  "budget_profile": "low",
+  "candidate_pool_ids_after_prune": [
+    "QOHAQRQI",
+    "GGGZNWZD",
+    "IGKMHDGI",
+    "ETGUMXJD",
+    "DQQTUJMK",
+    "FLDORAQE",
+    "JYEAPNDE",
+    "OKJSZSSW",
+    "UEAPYAVH",
+    "GPXWMDDO",
+    "UGACLBDX",
+    "BONIFJME",
+    "KIJIPGYX",
+    "TGUUITBW",
+    "RMYCVSOK"
+  ],
+  "candidate_pool_size": 15,
+  "candidate_pool_size_after_prune": 15,
+  "candidate_pool_size_before_prune": 15,
+  "cap_applied": true,
+  "chain_path": "full-no-critic",
+  "contradiction_signals": [],
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "ETGUMXJD": "Negative activity and sleep slopes, and high sleep consecutive declines.",
+      "GGGZNWZD": "High risk_hint, negative activity and sleep slopes, high activity consecutive declines, and positive exposure slope.",
+      "IGKMHDGI": "High risk_hint, negative activity and sleep slopes, high activity and sleep consecutive declines, and positive exposure slope.",
+      "OKJSZSSW": "Negative sleep slope and sleep consecutive declines.",
+      "QOHAQRQI": "High risk_hint, negative activity and sleep slopes, high activity consecutive declines, and positive exposure slope.",
+      "UEAPYAVH": "Negative activity and sleep slopes and sleep consecutive declines."
+    },
+    "selected_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI",
+      "ETGUMXJD",
+      "OKJSZSSW",
+      "UEAPYAVH"
+    ]
+  },
+  "final_ids": [
+    "QOHAQRQI",
+    "GGGZNWZD",
+    "IGKMHDGI"
+  ],
+  "finalize_debug": {
+    "anchor_source": "critic",
+    "cap_applied": true,
+    "cap_is_hard_final": true,
+    "cap_limit": 3,
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": false,
+      "scorer_confidence_0_to_1": 0.85
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [],
+    "fallback_applied": false,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "GGGZNWZD": "critic",
+      "IGKMHDGI": "critic",
+      "QOHAQRQI": "critic"
+    },
+    "id_kept_supporting_sources": {
+      "GGGZNWZD": [
+        "scorer",
+        "extractor"
+      ],
+      "IGKMHDGI": [
+        "scorer",
+        "extractor"
+      ],
+      "QOHAQRQI": [
+        "scorer",
+        "extractor"
+      ]
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.2,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "critic",
+        "scorer",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ],
+    "pre_finalize_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI",
+      "ETGUMXJD",
+      "OKJSZSSW",
+      "UEAPYAVH"
+    ],
+    "source_ids": {
+      "critic": [
+        "QOHAQRQI",
+        "GGGZNWZD",
+        "IGKMHDGI"
+      ],
+      "decider": [],
+      "extractor": [
+        "QOHAQRQI",
+        "GGGZNWZD",
+        "IGKMHDGI",
+        "ETGUMXJD",
+        "OKJSZSSW",
+        "UEAPYAVH"
+      ],
+      "scorer": [
+        "QOHAQRQI",
+        "GGGZNWZD",
+        "IGKMHDGI"
+      ]
+    },
+    "source_votes": {
+      "ETGUMXJD": [
+        "extractor"
+      ],
+      "GGGZNWZD": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "IGKMHDGI": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "OKJSZSSW": [
+        "extractor"
+      ],
+      "QOHAQRQI": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "UEAPYAVH": [
+        "extractor"
+      ]
+    }
+  },
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 3,
+    "flagged_ratio": 0.2,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "291cbd08aa7f4e631ba13bbca20eb37de86ac90fd73b820350c1e0ea8b1190b6",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP8AHB67PQ4PTR2ND3E1FJSK"
+  },
+  "id_kept_by_primary_source": {
+    "GGGZNWZD": "critic",
+    "IGKMHDGI": "critic",
+    "QOHAQRQI": "critic"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.75,
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations misidentified as long-term trends.",
+      "Missing individuals with slow, gradual declines that don't trigger immediate alerts.",
+      "Over-reliance on slope, neglecting absolute values and individual baselines."
+    ],
+    "guardrails": [
+      "Cross-validate declining activity/sleep with rising exposure to reduce false positives.",
+      "Consider the magnitude of the slope, not just the sign.",
+      "Avoid selecting candidates based solely on risk_hint; use it as a tie-breaker."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "Negative activity_slope and sleep_slope",
+      "High activity_consec_declines and sleep_consec_declines",
+      "Positive exposure_slope",
+      "High risk_hint"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Prioritize candidates with multiple declining indicators (activity, sleep) and rising exposure, focusing on slope and consecutive declines. Use risk_hint as a secondary sorting factor. Given the low budget, a 'fast' route is recommended, focusing on the most promising candidates."
+  },
+  "post_finalize_ids": [
+    "QOHAQRQI",
+    "GGGZNWZD",
+    "IGKMHDGI"
+  ],
+  "pre_finalize_ids": [
+    "QOHAQRQI",
+    "GGGZNWZD",
+    "IGKMHDGI",
+    "ETGUMXJD",
+    "OKJSZSSW",
+    "UEAPYAVH"
+  ],
+  "risk_elbow_cap": {
+    "applied": true,
+    "boundary_ratio": 4.0,
+    "cap": 3,
+    "drops": [
+      0.5,
+      1.0,
+      9.0,
+      0.7000000000000002,
+      0.2999999999999998,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.5
+    ],
+    "eligible": true,
+    "max_drop": 9.0,
+    "max_drop_index": 2,
+    "mean_drop": 0.9285714285714286,
+    "reason": "elbow_detected",
+    "scores": [
+      13.5,
+      13.0,
+      12.0,
+      3.0,
+      2.3,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      1.5,
+      1.5,
+      1.0,
+      1.0,
+      1.0,
+      0.5
+    ],
+    "second_drop": 1.0,
+    "thresholds": {
+      "drop_multiple": 2.0,
+      "min_drop": 4.0,
+      "min_ratio": 2.5
+    }
+  },
+  "scorer_confidence_0_to_1": 0.85,
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.85,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "QOHAQRQI",
+        "reason": "Strong negative slopes for activity and sleep, high activity consecutive declines, positive exposure slope, and high risk_hint.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "GGGZNWZD",
+        "reason": "Strong negative slopes for activity and sleep, high activity consecutive declines, positive exposure slope, and high risk_hint.",
+        "score_0_to_100": 92
+      },
+      {
+        "id": "IGKMHDGI",
+        "reason": "Negative activity and sleep slopes, high activity and sleep consecutive declines, positive exposure slope, and high risk_hint.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "ETGUMXJD",
+        "reason": "Negative activity and sleep slopes, and high sleep consecutive declines. Lower risk_hint.",
+        "score_0_to_100": 75
+      },
+      {
+        "id": "UEAPYAVH",
+        "reason": "Negative activity and sleep slopes and sleep consecutive declines. Activity slope is close to zero.",
+        "score_0_to_100": 65
+      },
+      {
+        "id": "OKJSZSSW",
+        "reason": "Negative sleep slope and sleep consecutive declines. Activity slope is positive.",
+        "score_0_to_100": 55
+      }
+    ],
+    "recommended_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ]
+  },
+  "session_id": "VNBrain2-01KP8AHB67PQ4PTR2ND3E1FJSK",
+  "status": "success"
+}

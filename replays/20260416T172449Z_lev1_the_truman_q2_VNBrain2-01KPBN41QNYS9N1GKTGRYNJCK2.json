@@ -1,0 +1,692 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 68136,
+    "output_tokens": 2907,
+    "total_tokens": 71043
+  },
+  "budget_profile": "high",
+  "candidate_pool_ids_after_prune": [
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+    "8289782a-685b-45cd-b0a1-2caed460b686",
+    "be65ac20-9102-4206-adba-b53380910ecf",
+    "c1da1f34-1760-4841-966f-cbed3f255dfb",
+    "00b11377-c3b6-484e-b70e-c7281fe51261",
+    "07e4b774-7ea2-4ca0-bb9d-d1e95a728b03",
+    "09e4d085-53f1-46c6-b28b-7d34dab52052",
+    "0c9b840e-5cda-440a-8d08-5f8cb74fe41c",
+    "0ed77000-3456-4052-8c6e-0a66f94561ca",
+    "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+    "2f585191-4e73-4850-805c-b02167082198",
+    "40d61e52-ee54-4aa0-a435-43bffce12aed",
+    "45f793a8-8223-4e65-9b6b-fa1b0a62d4aa",
+    "5309f3e1-a29e-4533-a44b-d8d7da5f4597",
+    "65eb47c9-3b12-40bc-b660-4a0f944fab22",
+    "6669e8f8-212b-4e7a-9615-0e59f923a35c",
+    "6f075509-4fae-44d3-b958-a72e0d435435",
+    "6f3885cf-c26e-454d-aba8-f1be0222f75d",
+    "7a010f53-8ad9-4b88-9bca-e93f6c705b62",
+    "7dc83725-605a-4fab-9e5a-017200a34b9a",
+    "8d9ec706-bd91-4458-af02-4bc1166c943d",
+    "95679cc6-814c-4fbe-86a3-b697b54f5d10",
+    "97ede41a-a012-4c6e-aa31-ee9d6dc27c26",
+    "9bcef53d-137b-4b82-8fca-3ea5f9978a37",
+    "9d3e4492-2021-426c-bf3c-5193b2d7de87",
+    "9d893a51-4843-47dc-b66e-1436341ff374",
+    "a0ba62a7-9a03-47c1-9575-7c26b2da5f1b",
+    "a3ebbbea-d56c-4627-bf6e-3f9ead9a4125",
+    "a839c005-7c5c-4e2d-b8d2-f07e99d7aedf",
+    "a8df2827-5aa0-4831-8f92-b2093d62739d",
+    "a9833409-4bb9-4764-b1c1-89521a636e36",
+    "c1ec5542-1bc7-49ba-a89c-4194f01d12c2",
+    "c7491b59-9186-42c8-a930-1411b13dfe13",
+    "d8711093-2453-4a74-8779-756014cc234d",
+    "dc26681a-fbb6-49bc-9481-9ae2996c93fb",
+    "dd81e9f0-e9b6-4586-a9f4-79994d6b1f21",
+    "e6e1cc47-780e-40cc-9f3e-01ac239e0a87",
+    "ea9f3acb-d2af-4b42-8588-9a7eb7823137",
+    "eee4f7cb-10ba-4f01-8a43-37cc11c74371",
+    "f187ddae-1a5d-4ff2-ad5a-565eae237d71",
+    "0d3ace95-9e82-41c7-a26b-203b8b792d24",
+    "44fdd50c-73f4-4f0d-8b03-0409ebd8890b",
+    "255834d5-c7c9-4311-804f-5abe227dea1f",
+    "6212031b-aec1-43fe-8818-a448e17e91eb",
+    "97c83f82-853e-4466-b4aa-7457625fa242",
+    "02c1c8e3-b088-4958-a047-0d32beb78292",
+    "4e53a923-af56-41e4-a804-67721ded06b7",
+    "d4de1c65-dc9e-4172-a158-ce2db0d214e2",
+    "ea8d19b0-8364-4f2e-93ef-43e511d9ca7b",
+    "139def3a-22bd-4465-90fa-d37d49f13070",
+    "1ac1500c-78d7-4f3a-8daa-ecdb877b2bad",
+    "f8efb252-3303-4666-a1db-1633bcfab23e",
+    "1ad62197-c368-4a1f-8286-22a811f5291e",
+    "1ede528a-c212-4d30-8e62-e901ca537f83",
+    "243504e1-f5a9-4ded-8262-d5b8a51cc1b9",
+    "3b41422b-60f2-4d59-838b-de85b5f2f6c7",
+    "4af1fdf6-8b4e-4d2b-ab32-97e2cd197792",
+    "52597177-e7c7-4bfd-9a18-eaa96db4123a",
+    "60929f96-b7a3-476b-b1f8-9a60298bea98",
+    "97bd8902-d29a-4041-b7ec-d8f1456bef42",
+    "9bdb7dc1-1804-447d-8eb9-a4146f27cd6b",
+    "b54bb23c-6703-4d7b-8149-411205534ef9",
+    "dcd4abb5-035a-42dc-b963-dd23a008eeaa",
+    "ed75ad30-d656-479b-9cca-06278aa87e62",
+    "0f400ab9-1f74-41ac-ba58-73d2aac629d4",
+    "0fd6eeff-e363-4bc9-a099-8f70e73e9884",
+    "1539373e-e909-4fcd-ba67-9f97ea4688bf",
+    "1f219c1d-fd99-47d6-b097-44253f85accb",
+    "5a3577a7-61e9-42b2-b8f1-a87d7e6fab4e",
+    "6650b3a2-f3e6-450a-80b6-5a54a14cbca8",
+    "6d85d330-aebe-4fd7-b6ee-e8b09640ab8e",
+    "7af2c254-522a-46e5-b50a-030653b16f2a",
+    "875367bb-b33a-40d4-bfed-7e9e0c5f6a46",
+    "f2798f49-f35c-4ecc-943e-30ee3d833c35",
+    "fce0c8bf-d8d8-4f3c-b29f-252867e15164",
+    "fff9978c-8395-490a-95a1-8347bc751a2b"
+  ],
+  "candidate_pool_size": 80,
+  "candidate_pool_size_after_prune": 80,
+  "candidate_pool_size_before_prune": 80,
+  "cap_applied": false,
+  "chain_path": "full-with-critic",
+  "contradiction_signals": [],
+  "critic_ran": true,
+  "critic_result": {
+    "critic_notes": "Final IDs were selected based on consistent high risk hints and unusual amounts. Rejected IDs either had low risk hints or were associated with very high amounts without sufficient supporting evidence. The final selection maintains a balance between sensitivity and specificity.",
+    "final_ids": [
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686"
+    ],
+    "rejected_ids": [
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb",
+      "00b11377-c3b6-484e-b70e-c7281fe51261",
+      "07e4b774-7ea2-4ca0-bb9d-d1e95a728b03",
+      "09e4d085-53f1-46c6-b28b-7d34dab52052",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+      "2f585191-4e73-4850-805c-b02167082198",
+      "40d61e52-ee54-4aa0-a435-43bffce12aed"
+    ],
+    "used_fallback": false
+  },
+  "dataset_key": "lev1_the_truman_q2",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 28,
+  "extractor_result": {
+    "rationale": {
+      "00b11377-c3b6-484e-b70e-c7281fe51261": "Very high amount (960.03) with a risk hint of 0.0, indicating potential suspicious transfer behavior.",
+      "07e4b774-7ea2-4ca0-bb9d-d1e95a728b03": "Very high amount (1056.14) with a risk hint of 0.0, suggesting possible fraudulent transfer activity.",
+      "09e4d085-53f1-46c6-b28b-7d34dab52052": "Very high amount (872.52) with a risk hint of 0.0, indicating potential suspicious transfer behavior.",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116": "High amount (355.28) with a risk hint of 0.0, suggesting potential fraudulent transfer activity.",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": "High amount (325.39) with a risk hint of 2.0, suggesting possible fraudulent transfer behavior.",
+      "2f585191-4e73-4850-805c-b02167082198": "High amount (965.13) with a risk hint of 0.0, indicating potential suspicious transfer behavior.",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f": "High amount (99.80) in e-commerce with a risk hint of 2.0, indicating potential fraud.",
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7": "High risk hint (2.7) with a low amount (22.21) indicating potential unusual behavior.",
+      "40d61e52-ee54-4aa0-a435-43bffce12aed": "High amount (968.72) with a risk hint of 0.0, suggesting potential fraudulent transfer activity.",
+      "8289782a-685b-45cd-b0a1-2caed460b686": "High amount (125.55) with a risk hint of 2.0, suggesting suspicious direct debit activity.",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": "Moderate risk hint (2.25) with a notable amount (46.09) and direct debit type, indicating potential fraud.",
+      "be65ac20-9102-4206-adba-b53380910ecf": "Moderate amount (44.95) with a risk hint of 2.0, indicating potential e-commerce fraud.",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": "High risk hint (2.7) and a significant amount (106.15) in e-commerce, suggesting possible fraudulent activity.",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb": "Low amount (16.29) but unusual payment method (smartwatch) with a risk hint of 2.0, suggesting potential fraud."
+    },
+    "selected_ids": [
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686",
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb",
+      "00b11377-c3b6-484e-b70e-c7281fe51261",
+      "07e4b774-7ea2-4ca0-bb9d-d1e95a728b03",
+      "09e4d085-53f1-46c6-b28b-7d34dab52052",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+      "2f585191-4e73-4850-805c-b02167082198",
+      "40d61e52-ee54-4aa0-a435-43bffce12aed"
+    ],
+    "used_fallback": false
+  },
+  "final_ids": [
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+    "8289782a-685b-45cd-b0a1-2caed460b686",
+    "be65ac20-9102-4206-adba-b53380910ecf",
+    "c1da1f34-1760-4841-966f-cbed3f255dfb"
+  ],
+  "finalize_debug": {
+    "anchor_source": "critic",
+    "cap_applied": false,
+    "cap_is_hard_final": true,
+    "cap_limit": 28,
+    "challenge_min_ratio_backfill": {
+      "base_ratio": 0.22,
+      "effective_ratio": 0.22,
+      "enabled": true,
+      "fallback_style_outputs": false,
+      "final_count": 8,
+      "max_backfill_extra": 3,
+      "quality_pool_count": 2,
+      "risk_threshold": 0.6,
+      "target_count": 17,
+      "target_count_relaxed": 8
+    },
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": false,
+      "scorer_confidence_0_to_1": 0.45
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb",
+      "00b11377-c3b6-484e-b70e-c7281fe51261",
+      "07e4b774-7ea2-4ca0-bb9d-d1e95a728b03",
+      "09e4d085-53f1-46c6-b28b-7d34dab52052",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+      "2f585191-4e73-4850-805c-b02167082198",
+      "40d61e52-ee54-4aa0-a435-43bffce12aed"
+    ],
+    "fallback_applied": false,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": "critic",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f": "critic",
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7": "critic",
+      "8289782a-685b-45cd-b0a1-2caed460b686": "critic",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": "critic",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": "critic"
+    },
+    "id_kept_supporting_sources": {
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": [
+        "scorer",
+        "extractor"
+      ],
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f": [
+        "scorer",
+        "extractor"
+      ],
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7": [
+        "scorer",
+        "extractor"
+      ],
+      "8289782a-685b-45cd-b0a1-2caed460b686": [
+        "scorer",
+        "extractor"
+      ],
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": [
+        "scorer",
+        "extractor"
+      ],
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": [
+        "scorer",
+        "extractor"
+      ]
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.08,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "critic",
+        "scorer",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686",
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb"
+    ],
+    "pre_finalize_ids": [
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686"
+    ],
+    "source_ids": {
+      "critic": [
+        "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "8289782a-685b-45cd-b0a1-2caed460b686"
+      ],
+      "decider": [],
+      "extractor": [
+        "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "8289782a-685b-45cd-b0a1-2caed460b686"
+      ],
+      "scorer": [
+        "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "8289782a-685b-45cd-b0a1-2caed460b686"
+      ]
+    },
+    "source_votes": {
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "8289782a-685b-45cd-b0a1-2caed460b686": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": [
+        "critic",
+        "extractor",
+        "scorer"
+      ]
+    }
+  },
+  "firewall_report": {
+    "dataset_key": "lev1_the_truman_q2",
+    "flagged_count": 8,
+    "flagged_ratio": 0.1,
+    "input_sha256": "fdd4593807e75502f0077bad3ace1001fe462599f5385295c141c31ff744f33b",
+    "mode": "challenge",
+    "output_sha256": "ccfd7a4fe06c517d55b710fbeded291ec221ecb1a22f265129a5ee12119efac1",
+    "phase": "training",
+    "population_count": 80,
+    "session_id": "VNBrain2-01KPBN41QNYS9N1GKTGRYNJCK2"
+  },
+  "id_kept_by_primary_source": {
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": "critic",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f": "critic",
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7": "critic",
+    "8289782a-685b-45cd-b0a1-2caed460b686": "critic",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": "critic",
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": "critic"
+  },
+  "llm_stage_max_output_ids": 14,
+  "mode": "challenge",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.85,
+  "planner_result": {
+    "failure_modes": [
+      "missing likely fraud cases",
+      "high false positive rate",
+      "overlooking evolving fraud patterns"
+    ],
+    "guardrails": [
+      "ensure a balance between sensitivity and specificity",
+      "monitor for changes in transaction behavior over time",
+      "limit selection to top K candidates based on risk assessment"
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "high risk_hint",
+      "unusual amount_max/amount_sum",
+      "repeated suspicious patterns (row_count)",
+      "unusual timing/location/device/merchant patterns"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Select transactions with high risk hints, unusual amounts, and repeated suspicious patterns while controlling for false positives."
+  },
+  "post_finalize_ids": [
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+    "8289782a-685b-45cd-b0a1-2caed460b686",
+    "be65ac20-9102-4206-adba-b53380910ecf",
+    "c1da1f34-1760-4841-966f-cbed3f255dfb"
+  ],
+  "pre_finalize_ids": [
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+    "8289782a-685b-45cd-b0a1-2caed460b686"
+  ],
+  "risk_component_summary": {
+    "component_abs_mean": {
+      "c_amt": 0.14750000000000005,
+      "c_balance": 0.0,
+      "c_benign": 2.8800000000000017,
+      "c_desc_kw": 0.0,
+      "c_hour_rare": 0.0,
+      "c_mail": 0.309,
+      "c_method_rare": 0.0,
+      "c_night": 0.003125,
+      "c_pair_high": 0.0,
+      "c_pair_rare": 0.017499999999999998,
+      "c_rapid": 0.0,
+      "c_recipient_z": 0.0,
+      "c_sender_z": 0.2,
+      "c_struct": 0.0,
+      "c_type_rare": 0.0
+    },
+    "component_mean": {
+      "c_amt": 0.14750000000000005,
+      "c_balance": 0.0,
+      "c_benign": -2.8800000000000017,
+      "c_desc_kw": 0.0,
+      "c_hour_rare": 0.0,
+      "c_mail": 0.309,
+      "c_method_rare": 0.0,
+      "c_night": 0.003125,
+      "c_pair_high": 0.0,
+      "c_pair_rare": 0.017499999999999998,
+      "c_rapid": 0.0,
+      "c_recipient_z": 0.0,
+      "c_sender_z": 0.2,
+      "c_struct": 0.0,
+      "c_type_rare": 0.0
+    },
+    "rows_scanned": 80,
+    "top_negative_component_ids": [
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "0f400ab9-1f74-41ac-ba58-73d2aac629d4",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "0fd6eeff-e363-4bc9-a099-8f70e73e9884",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "1539373e-e909-4fcd-ba67-9f97ea4688bf",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "1f219c1d-fd99-47d6-b097-44253f85accb",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "5a3577a7-61e9-42b2-b8f1-a87d7e6fab4e",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "6650b3a2-f3e6-450a-80b6-5a54a14cbca8",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "6d85d330-aebe-4fd7-b6ee-e8b09640ab8e",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "7af2c254-522a-46e5-b50a-030653b16f2a",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "875367bb-b33a-40d4-bfed-7e9e0c5f6a46",
+        "risk_hint": -6.04
+      },
+      {
+        "component_abs_sum": 6.760000000000001,
+        "component_sum": -6.04,
+        "id": "f2798f49-f35c-4ecc-943e-30ee3d833c35",
+        "risk_hint": -6.04
+      }
+    ],
+    "top_positive_component_ids": [
+      {
+        "component_abs_sum": 2.7,
+        "component_sum": 2.7,
+        "id": "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "risk_hint": 2.7
+      },
+      {
+        "component_abs_sum": 2.7,
+        "component_sum": 2.7,
+        "id": "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "risk_hint": 2.7
+      },
+      {
+        "component_abs_sum": 2.25,
+        "component_sum": 2.25,
+        "id": "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "risk_hint": 2.25
+      },
+      {
+        "component_abs_sum": 2.0,
+        "component_sum": 2.0,
+        "id": "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "risk_hint": 2.0
+      },
+      {
+        "component_abs_sum": 2.0,
+        "component_sum": 2.0,
+        "id": "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "risk_hint": 2.0
+      },
+      {
+        "component_abs_sum": 2.0,
+        "component_sum": 2.0,
+        "id": "8289782a-685b-45cd-b0a1-2caed460b686",
+        "risk_hint": 2.0
+      },
+      {
+        "component_abs_sum": 2.0,
+        "component_sum": 2.0,
+        "id": "be65ac20-9102-4206-adba-b53380910ecf",
+        "risk_hint": 2.0
+      },
+      {
+        "component_abs_sum": 2.0,
+        "component_sum": 2.0,
+        "id": "c1da1f34-1760-4841-966f-cbed3f255dfb",
+        "risk_hint": 2.0
+      },
+      {
+        "component_abs_sum": 0.0,
+        "component_sum": 0.0,
+        "id": "00b11377-c3b6-484e-b70e-c7281fe51261",
+        "risk_hint": 0.0
+      },
+      {
+        "component_abs_sum": 0.0,
+        "component_sum": 0.0,
+        "id": "07e4b774-7ea2-4ca0-bb9d-d1e95a728b03",
+        "risk_hint": 0.0
+      }
+    ]
+  },
+  "risk_elbow_cap": {
+    "applied": false,
+    "cap": null,
+    "eligible": false,
+    "reason": "not_checked"
+  },
+  "scorer_confidence_0_to_1": 0.45,
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.45,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "reason": "Fallback: promoted conservative subset from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "reason": "Fallback: promoted conservative subset from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 87
+      },
+      {
+        "id": "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "reason": "Fallback: promoted conservative subset from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 84
+      },
+      {
+        "id": "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "reason": "Fallback: promoted conservative subset from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 81
+      },
+      {
+        "id": "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "reason": "Fallback: promoted conservative subset from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 78
+      },
+      {
+        "id": "8289782a-685b-45cd-b0a1-2caed460b686",
+        "reason": "Fallback: promoted conservative subset from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 75
+      }
+    ],
+    "recommended_ids": [
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686"
+    ],
+    "used_fallback": true
+  },
+  "session_id": "VNBrain2-01KPBN41QNYS9N1GKTGRYNJCK2",
+  "status": "success",
+  "tool_features_preview": [
+    "id=3ba7708b-367a-4637-9b52-d8fea85dc8e7 risk_hint=2.7000 amount=22.21 sender_tx_count=15 pair_count=1 sender_amt_z=8.86 recipient_amt_z=0.00 hour=5 rapid_sender=0 type=direct debit method=none desc_tag=other c_amt=0.00 c_sender_z=2.00 c_recipient_z=0.00 c_pair_rare=0.70 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=beaa4b03-0a2f-48a1-abb4-a5c7378ed046 risk_hint=2.7000 amount=106.15 sender_tx_count=15 pair_count=1 sender_amt_z=16.19 recipient_amt_z=0.00 hour=11 rapid_sender=0 type=e-commerce method=paypal desc_tag=none c_amt=0.00 c_sender_z=2.00 c_recipient_z=0.00 c_pair_rare=0.70 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3 risk_hint=2.2500 amount=46.09 sender_tx_count=15 pair_count=2 sender_amt_z=17.29 recipient_amt_z=0.00 hour=2 rapid_sender=0 type=direct debit method=none desc_tag=other c_amt=0.00 c_sender_z=2.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.25 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=2d22a0cd-8297-4d67-bd84-9e1ceaba5b10 risk_hint=2.0000 amount=325.39 sender_tx_count=14 pair_count=1 sender_amt_z=8.23 recipient_amt_z=0.00 hour=12 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=2.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=32e73719-7b07-4c61-9fac-6c715c92ab1f risk_hint=2.0000 amount=99.80 sender_tx_count=15 pair_count=2 sender_amt_z=6.86 recipient_amt_z=0.00 hour=16 rapid_sender=0 type=e-commerce method=debit card desc_tag=none c_amt=0.00 c_sender_z=2.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=8289782a-685b-45cd-b0a1-2caed460b686 risk_hint=2.0000 amount=125.55 sender_tx_count=15 pair_count=2 sender_amt_z=15.83 recipient_amt_z=0.00 hour=8 rapid_sender=0 type=direct debit method=none desc_tag=other c_amt=0.00 c_sender_z=2.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=be65ac20-9102-4206-adba-b53380910ecf risk_hint=2.0000 amount=44.95 sender_tx_count=15 pair_count=2 sender_amt_z=8.27 recipient_amt_z=0.00 hour=9 rapid_sender=0 type=e-commerce method=debit card desc_tag=none c_amt=0.00 c_sender_z=2.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=c1da1f34-1760-4841-966f-cbed3f255dfb risk_hint=2.0000 amount=16.29 sender_tx_count=14 pair_count=1 sender_amt_z=12.20 recipient_amt_z=0.00 hour=9 rapid_sender=0 type=in-person payment method=smartwatch desc_tag=none c_amt=0.00 c_sender_z=2.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=00b11377-c3b6-484e-b70e-c7281fe51261 risk_hint=0.0000 amount=960.03 sender_tx_count=14 pair_count=12 sender_amt_z=0.06 recipient_amt_z=0.14 hour=18 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=07e4b774-7ea2-4ca0-bb9d-d1e95a728b03 risk_hint=0.0000 amount=1056.14 sender_tx_count=14 pair_count=12 sender_amt_z=1.18 recipient_amt_z=1.25 hour=16 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=09e4d085-53f1-46c6-b28b-7d34dab52052 risk_hint=0.0000 amount=872.52 sender_tx_count=14 pair_count=12 sender_amt_z=1.18 recipient_amt_z=1.41 hour=15 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=0c9b840e-5cda-440a-8d08-5f8cb74fe41c risk_hint=0.0000 amount=374.99 sender_tx_count=15 pair_count=12 sender_amt_z=0.22 recipient_amt_z=0.09 hour=16 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=0ed77000-3456-4052-8c6e-0a66f94561ca risk_hint=0.0000 amount=978.90 sender_tx_count=14 pair_count=12 sender_amt_z=0.19 recipient_amt_z=0.13 hour=15 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116 risk_hint=0.0000 amount=355.28 sender_tx_count=15 pair_count=12 sender_amt_z=0.29 recipient_amt_z=0.67 hour=9 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=2f585191-4e73-4850-805c-b02167082198 risk_hint=0.0000 amount=965.13 sender_tx_count=15 pair_count=12 sender_amt_z=0.40 recipient_amt_z=0.90 hour=12 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=40d61e52-ee54-4aa0-a435-43bffce12aed risk_hint=0.0000 amount=968.72 sender_tx_count=14 pair_count=12 sender_amt_z=0.06 recipient_amt_z=0.02 hour=14 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=45f793a8-8223-4e65-9b6b-fa1b0a62d4aa risk_hint=0.0000 amount=926.07 sender_tx_count=14 pair_count=12 sender_amt_z=0.49 recipient_amt_z=0.64 hour=15 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=5309f3e1-a29e-4533-a44b-d8d7da5f4597 risk_hint=0.0000 amount=927.91 sender_tx_count=14 pair_count=12 sender_amt_z=0.47 recipient_amt_z=0.61 hour=11 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=65eb47c9-3b12-40bc-b660-4a0f944fab22 risk_hint=0.0000 amount=1023.13 sender_tx_count=15 pair_count=12 sender_amt_z=0.66 recipient_amt_z=0.36 hour=12 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=6669e8f8-212b-4e7a-9615-0e59f923a35c risk_hint=0.0000 amount=365.84 sender_tx_count=15 pair_count=12 sender_amt_z=0.02 recipient_amt_z=0.26 hour=17 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=6f075509-4fae-44d3-b958-a72e0d435435 risk_hint=0.0000 amount=1035.88 sender_tx_count=15 pair_count=12 sender_amt_z=0.89 recipient_amt_z=0.64 hour=10 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=6f3885cf-c26e-454d-aba8-f1be0222f75d risk_hint=0.0000 amount=403.71 sender_tx_count=15 pair_count=12 sender_amt_z=0.96 recipient_amt_z=1.21 hour=13 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=7a010f53-8ad9-4b88-9bca-e93f6c705b62 risk_hint=0.0000 amount=1032.20 sender_tx_count=14 pair_count=12 sender_amt_z=0.87 recipient_amt_z=0.90 hour=8 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=7dc83725-605a-4fab-9e5a-017200a34b9a risk_hint=0.0000 amount=982.60 sender_tx_count=15 pair_count=12 sender_amt_z=0.08 recipient_amt_z=0.52 hour=18 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=8d9ec706-bd91-4458-af02-4bc1166c943d risk_hint=0.0000 amount=389.91 sender_tx_count=15 pair_count=12 sender_amt_z=0.60 recipient_amt_z=0.68 hour=13 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=95679cc6-814c-4fbe-86a3-b697b54f5d10 risk_hint=0.0000 amount=399.65 sender_tx_count=15 pair_count=12 sender_amt_z=0.85 recipient_amt_z=1.06 hour=14 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=97ede41a-a012-4c6e-aa31-ee9d6dc27c26 risk_hint=0.0000 amount=1023.88 sender_tx_count=15 pair_count=12 sender_amt_z=0.67 recipient_amt_z=0.38 hour=8 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=9bcef53d-137b-4b82-8fca-3ea5f9978a37 risk_hint=0.0000 amount=971.31 sender_tx_count=14 pair_count=12 sender_amt_z=0.09 recipient_amt_z=0.02 hour=16 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=9d3e4492-2021-426c-bf3c-5193b2d7de87 risk_hint=0.0000 amount=951.40 sender_tx_count=15 pair_count=12 sender_amt_z=0.66 recipient_amt_z=1.20 hour=13 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=9d893a51-4843-47dc-b66e-1436341ff374 risk_hint=0.0000 amount=366.50 sender_tx_count=15 pair_count=12 sender_amt_z=0.00 recipient_amt_z=0.24 hour=19 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=a0ba62a7-9a03-47c1-9575-7c26b2da5f1b risk_hint=0.0000 amount=987.17 sender_tx_count=15 pair_count=12 sender_amt_z=0.00 recipient_amt_z=0.42 hour=17 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=a3ebbbea-d56c-4627-bf6e-3f9ead9a4125 risk_hint=0.0000 amount=1026.68 sender_tx_count=14 pair_count=12 sender_amt_z=0.80 recipient_amt_z=0.82 hour=10 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=a839c005-7c5c-4e2d-b8d2-f07e99d7aedf risk_hint=0.0000 amount=1039.09 sender_tx_count=15 pair_count=12 sender_amt_z=0.95 recipient_amt_z=0.71 hour=14 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=a8df2827-5aa0-4831-8f92-b2093d62739d risk_hint=0.0000 amount=370.14 sender_tx_count=15 pair_count=12 sender_amt_z=0.09 recipient_amt_z=0.09 hour=14 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=a9833409-4bb9-4764-b1c1-89521a636e36 risk_hint=0.0000 amount=952.23 sender_tx_count=15 pair_count=12 sender_amt_z=0.64 recipient_amt_z=1.18 hour=8 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=c1ec5542-1bc7-49ba-a89c-4194f01d12c2 risk_hint=0.0000 amount=914.50 sender_tx_count=14 pair_count=12 sender_amt_z=0.64 recipient_amt_z=0.80 hour=14 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=c7491b59-9186-42c8-a930-1411b13dfe13 risk_hint=0.0000 amount=336.09 sender_tx_count=15 pair_count=12 sender_amt_z=0.78 recipient_amt_z=1.42 hour=16 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=d8711093-2453-4a74-8779-756014cc234d risk_hint=0.0000 amount=360.56 sender_tx_count=15 pair_count=12 sender_amt_z=0.15 recipient_amt_z=0.47 hour=17 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=dc26681a-fbb6-49bc-9481-9ae2996c93fb risk_hint=0.0000 amount=392.72 sender_tx_count=15 pair_count=12 sender_amt_z=0.67 recipient_amt_z=0.79 hour=14 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=dd81e9f0-e9b6-4586-a9f4-79994d6b1f21 risk_hint=0.0000 amount=989.74 sender_tx_count=15 pair_count=12 sender_amt_z=0.05 recipient_amt_z=0.36 hour=11 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=e6e1cc47-780e-40cc-9f3e-01ac239e0a87 risk_hint=0.0000 amount=407.10 sender_tx_count=15 pair_count=12 sender_amt_z=1.04 recipient_amt_z=1.35 hour=9 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=ea9f3acb-d2af-4b42-8588-9a7eb7823137 risk_hint=0.0000 amount=1081.71 sender_tx_count=15 pair_count=12 sender_amt_z=1.74 recipient_amt_z=1.64 hour=10 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=eee4f7cb-10ba-4f01-8a43-37cc11c74371 risk_hint=0.0000 amount=1073.33 sender_tx_count=15 pair_count=12 sender_amt_z=1.58 recipient_amt_z=1.45 hour=16 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=f187ddae-1a5d-4ff2-ad5a-565eae237d71 risk_hint=0.0000 amount=1019.29 sender_tx_count=14 pair_count=12 sender_amt_z=0.71 recipient_amt_z=0.71 hour=9 rapid_sender=0 type=transfer method=none desc_tag=other c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.00 c_pair_high=0.00 c_benign=0.00",
+    "id=0d3ace95-9e82-41c7-a26b-203b8b792d24 risk_hint=-3.1000 amount=2862.00 sender_tx_count=12 pair_count=12 sender_amt_z=0.71 recipient_amt_z=0.71 hour=14 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=2.20 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=44fdd50c-73f4-4f0d-8b03-0409ebd8890b risk_hint=-3.1000 amount=2883.07 sender_tx_count=12 pair_count=12 sender_amt_z=1.85 recipient_amt_z=1.85 hour=18 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=2.20 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=255834d5-c7c9-4311-804f-5abe227dea1f risk_hint=-3.9000 amount=2860.10 sender_tx_count=12 pair_count=12 sender_amt_z=0.60 recipient_amt_z=0.60 hour=12 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=1.40 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=6212031b-aec1-43fe-8818-a448e17e91eb risk_hint=-3.9000 amount=2854.15 sender_tx_count=12 pair_count=12 sender_amt_z=0.28 recipient_amt_z=0.28 hour=15 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=1.40 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=97c83f82-853e-4466-b4aa-7457625fa242 risk_hint=-3.9000 amount=2861.00 sender_tx_count=12 pair_count=12 sender_amt_z=0.65 recipient_amt_z=0.65 hour=13 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=1.40 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=02c1c8e3-b088-4958-a047-0d32beb78292 risk_hint=-4.5000 amount=2849.81 sender_tx_count=12 pair_count=12 sender_amt_z=0.04 recipient_amt_z=0.04 hour=15 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.80 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=4e53a923-af56-41e4-a804-67721ded06b7 risk_hint=-4.5000 amount=2842.18 sender_tx_count=12 pair_count=12 sender_amt_z=0.37 recipient_amt_z=0.37 hour=13 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.80 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=d4de1c65-dc9e-4172-a158-ce2db0d214e2 risk_hint=-4.5000 amount=2848.26 sender_tx_count=12 pair_count=12 sender_amt_z=0.04 recipient_amt_z=0.04 hour=9 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.80 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=ea8d19b0-8364-4f2e-93ef-43e511d9ca7b risk_hint=-4.5000 amount=2836.20 sender_tx_count=12 pair_count=12 sender_amt_z=0.70 recipient_amt_z=0.70 hour=9 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.80 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=139def3a-22bd-4465-90fa-d37d49f13070 risk_hint=-5.3000 amount=2795.10 sender_tx_count=12 pair_count=12 sender_amt_z=2.93 recipient_amt_z=2.93 hour=18 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=1ac1500c-78d7-4f3a-8daa-ecdb877b2bad risk_hint=-5.3000 amount=2819.25 sender_tx_count=12 pair_count=12 sender_amt_z=1.62 recipient_amt_z=1.62 hour=15 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=f8efb252-3303-4666-a1db-1633bcfab23e risk_hint=-5.3000 amount=2796.60 sender_tx_count=12 pair_count=12 sender_amt_z=2.85 recipient_amt_z=2.85 hour=10 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=1.10 c_pair_high=0.00 c_benign=-6.40",
+    "id=1ad62197-c368-4a1f-8286-22a811f5291e risk_hint=-5.8000 amount=2768.43 sender_tx_count=12 pair_count=12 sender_amt_z=0.02 recipient_amt_z=0.02 hour=9 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=1ede528a-c212-4d30-8e62-e901ca537f83 risk_hint=-5.8000 amount=2757.67 sender_tx_count=12 pair_count=12 sender_amt_z=0.23 recipient_amt_z=0.23 hour=14 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=243504e1-f5a9-4ded-8262-d5b8a51cc1b9 risk_hint=-5.8000 amount=2814.31 sender_tx_count=12 pair_count=12 sender_amt_z=1.10 recipient_amt_z=1.10 hour=15 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=3b41422b-60f2-4d59-838b-de85b5f2f6c7 risk_hint=-5.8000 amount=2766.65 sender_tx_count=12 pair_count=12 sender_amt_z=0.02 recipient_amt_z=0.02 hour=9 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=4af1fdf6-8b4e-4d2b-ab32-97e2cd197792 risk_hint=-5.8000 amount=2717.11 sender_tx_count=12 pair_count=12 sender_amt_z=1.18 recipient_amt_z=1.18 hour=10 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=52597177-e7c7-4bfd-9a18-eaa96db4123a risk_hint=-5.8000 amount=2737.72 sender_tx_count=12 pair_count=12 sender_amt_z=0.70 recipient_amt_z=0.70 hour=12 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=60929f96-b7a3-476b-b1f8-9a60298bea98 risk_hint=-5.8000 amount=2785.28 sender_tx_count=12 pair_count=12 sender_amt_z=0.42 recipient_amt_z=0.42 hour=14 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=97bd8902-d29a-4041-b7ec-d8f1456bef42 risk_hint=-5.8000 amount=2768.14 sender_tx_count=12 pair_count=12 sender_amt_z=0.02 recipient_amt_z=0.02 hour=12 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=9bdb7dc1-1804-447d-8eb9-a4146f27cd6b risk_hint=-5.8000 amount=2737.96 sender_tx_count=12 pair_count=12 sender_amt_z=0.69 recipient_amt_z=0.69 hour=8 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=b54bb23c-6703-4d7b-8149-411205534ef9 risk_hint=-5.8000 amount=2816.15 sender_tx_count=12 pair_count=12 sender_amt_z=1.15 recipient_amt_z=1.15 hour=11 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=dcd4abb5-035a-42dc-b963-dd23a008eeaa risk_hint=-5.8000 amount=2727.50 sender_tx_count=12 pair_count=12 sender_amt_z=0.94 recipient_amt_z=0.94 hour=18 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=ed75ad30-d656-479b-9cca-06278aa87e62 risk_hint=-5.8000 amount=2795.31 sender_tx_count=12 pair_count=12 sender_amt_z=0.66 recipient_amt_z=0.66 hour=19 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.60 c_pair_high=0.00 c_benign=-6.40",
+    "id=0f400ab9-1f74-41ac-ba58-73d2aac629d4 risk_hint=-6.0400 amount=1070.92 sender_tx_count=12 pair_count=12 sender_amt_z=0.73 recipient_amt_z=0.73 hour=15 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=0fd6eeff-e363-4bc9-a099-8f70e73e9884 risk_hint=-6.0400 amount=1047.73 sender_tx_count=12 pair_count=12 sender_amt_z=0.88 recipient_amt_z=0.88 hour=13 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=1539373e-e909-4fcd-ba67-9f97ea4688bf risk_hint=-6.0400 amount=1070.12 sender_tx_count=12 pair_count=12 sender_amt_z=0.68 recipient_amt_z=0.68 hour=10 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=1f219c1d-fd99-47d6-b097-44253f85accb risk_hint=-6.0400 amount=1045.04 sender_tx_count=12 pair_count=12 sender_amt_z=1.07 recipient_amt_z=1.07 hour=9 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=5a3577a7-61e9-42b2-b8f1-a87d7e6fab4e risk_hint=-6.0400 amount=1067.95 sender_tx_count=12 pair_count=12 sender_amt_z=0.53 recipient_amt_z=0.53 hour=12 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=6650b3a2-f3e6-450a-80b6-5a54a14cbca8 risk_hint=-6.0400 amount=1065.58 sender_tx_count=12 pair_count=12 sender_amt_z=0.36 recipient_amt_z=0.36 hour=20 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=6d85d330-aebe-4fd7-b6ee-e8b09640ab8e risk_hint=-6.0400 amount=1050.76 sender_tx_count=12 pair_count=12 sender_amt_z=0.67 recipient_amt_z=0.67 hour=10 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=7af2c254-522a-46e5-b50a-030653b16f2a risk_hint=-6.0400 amount=1055.21 sender_tx_count=12 pair_count=12 sender_amt_z=0.36 recipient_amt_z=0.36 hour=15 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=875367bb-b33a-40d4-bfed-7e9e0c5f6a46 risk_hint=-6.0400 amount=1052.75 sender_tx_count=12 pair_count=12 sender_amt_z=0.53 recipient_amt_z=0.53 hour=12 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=f2798f49-f35c-4ecc-943e-30ee3d833c35 risk_hint=-6.0400 amount=1043.21 sender_tx_count=12 pair_count=12 sender_amt_z=1.20 recipient_amt_z=1.20 hour=18 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=fce0c8bf-d8d8-4f3c-b29f-252867e15164 risk_hint=-6.0400 amount=1065.91 sender_tx_count=12 pair_count=12 sender_amt_z=0.38 recipient_amt_z=0.38 hour=8 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40",
+    "id=fff9978c-8395-490a-95a1-8347bc751a2b risk_hint=-6.0400 amount=1079.04 sender_tx_count=12 pair_count=12 sender_amt_z=1.30 recipient_amt_z=1.30 hour=12 rapid_sender=0 type=transfer method=none desc_tag=salary c_amt=0.00 c_sender_z=0.00 c_recipient_z=0.00 c_pair_rare=0.00 c_method_rare=0.00 c_type_rare=0.00 c_hour_rare=0.00 c_night=0.00 c_rapid=0.00 c_desc_kw=0.00 c_struct=0.00 c_balance=0.00 c_mail=0.36 c_pair_high=0.00 c_benign=-6.40"
+  ]
+}

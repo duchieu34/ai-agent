@@ -1,0 +1,117 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 8806,
+    "output_tokens": 1009,
+    "total_tokens": 9815
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI",
+      "ETGUMXJD"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_result": {},
+  "dominant_single_cap_applied": false,
+  "effective_max_output_ids": 9,
+  "extractor_result": {
+    "rationale": {
+      "ETGUMXJD": "Negative activity and sleep slopes, and sleep_consec_declines, suggest a decline, although risk_hint is low.",
+      "GGGZNWZD": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and activity_consec_declines suggest a concerning decline.",
+      "IGKMHDGI": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and activity/sleep consecutive declines point to a suboptimal trajectory.",
+      "QOHAQRQI": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and high activity_consec_declines indicate a strong negative trend."
+    },
+    "selected_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI",
+      "ETGUMXJD"
+    ]
+  },
+  "final_ids": [
+    "GGGZNWZD",
+    "QOHAQRQI",
+    "IGKMHDGI",
+    "ETGUMXJD"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 4,
+    "flagged_ratio": 0.26666666666666666,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "cb44f2632d301cbab947db48418c0beb231fc65c50e8a0425e6934dbdb2b1320",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP85QPAFA8KVF454HPFYDMKD"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations misidentified as long-term trends.",
+      "Missing individuals with slow but steady declines that don't trigger consecutive decline counters.",
+      "Over-reliance on risk_hint without considering underlying trend data.",
+      "Ignoring individuals with only one strong negative trend while others are stable."
+    ],
+    "guardrails": [
+      "Cross-validate negative trends in activity and sleep with increasing exposure to strengthen confidence.",
+      "Avoid selecting candidates based solely on risk_hint; prioritize those with demonstrable negative trends.",
+      "Consider the magnitude of the slopes, not just the direction.",
+      "Check for consistency between activity_delta and activity_slope."
+    ],
+    "planner_confidence_0_to_1": 0.8,
+    "priority_signals": [
+      "Negative activity_slope and sleep_slope",
+      "Positive exposure_slope",
+      "High activity_consec_declines and sleep_consec_declines",
+      "High risk_hint values"
+    ],
+    "route_recommendation": "full",
+    "strategy": "Focus on identifying citizens with declining trends in activity and sleep, coupled with increasing environmental exposure. Prioritize candidates with multiple indicators showing negative trends and consecutive declines. Leverage risk_hint as an initial filter but rely more heavily on the trend analysis of activity, sleep, and exposure."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.95,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "GGGZNWZD",
+        "reason": "High risk_hint (13.00), strong negative activity and sleep slopes (-3.258, -4.247), positive exposure slope (3.275), and activity_consec_declines (5) indicate a strong negative trend.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "QOHAQRQI",
+        "reason": "High risk_hint (13.50), negative activity and sleep slopes (-2.974, -2.879), positive exposure slope (3.358), and high activity_consec_declines (8) indicate a strong negative trend.",
+        "score_0_to_100": 93
+      },
+      {
+        "id": "IGKMHDGI",
+        "reason": "High risk_hint (12.00), negative activity and sleep slopes (-3.055, -2.819), positive exposure slope (3.626), and activity/sleep consecutive declines (3,3) point to a suboptimal trajectory.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "ETGUMXJD",
+        "reason": "Negative activity and sleep slopes (-0.313, -0.247), and sleep_consec_declines (4), suggest a decline, although risk_hint is low (3.00) and slopes are not very steep.",
+        "score_0_to_100": 65
+      }
+    ],
+    "recommended_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI",
+      "ETGUMXJD"
+    ]
+  },
+  "session_id": "VNBrain2-01KP85QPAFA8KVF454HPFYDMKD",
+  "status": "success"
+}

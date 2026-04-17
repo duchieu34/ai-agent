@@ -1,0 +1,124 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 9849,
+    "output_tokens": 1043,
+    "total_tokens": 10892
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 30,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "UISLLTXM",
+      "UPPIPXVV",
+      "QHIUGITL",
+      "NANSUMZD",
+      "ERGZRVUY"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_3",
+  "decider_result": {},
+  "effective_max_output_ids": 18,
+  "extractor_result": {
+    "rationale": {
+      "ERGZRVUY": "Moderate risk hint (5.50), significant negative changes in both activity (-30.00) and sleep (-23.00).",
+      "NANSUMZD": "Moderate risk hint (5.00), significant negative changes in both activity (-34.00) and sleep (-48.00).",
+      "QHIUGITL": "High risk hint (6.00), older age (73), and significant negative changes in both activity (-34.00) and sleep (-34.00).",
+      "UISLLTXM": "High risk hint (6.00), older age (82), and substantial negative changes in both activity (-43.00) and sleep (-41.00).",
+      "UPPIPXVV": "High risk hint (6.00), older age (77), and notable negative changes in both activity (-37.00) and sleep (-39.00)."
+    },
+    "selected_ids": [
+      "QHIUGITL",
+      "UISLLTXM",
+      "UPPIPXVV",
+      "ERGZRVUY",
+      "NANSUMZD"
+    ]
+  },
+  "final_ids": [
+    "UISLLTXM",
+    "UPPIPXVV",
+    "QHIUGITL",
+    "NANSUMZD",
+    "ERGZRVUY"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_3",
+    "flagged_count": 5,
+    "flagged_ratio": 0.16666666666666666,
+    "input_sha256": "e72f15fce9f2b2bcad14c4bc55bff22402b3d0dd109db16f9a31228dfa9115a9",
+    "mode": "sandbox",
+    "output_sha256": "419e953ad81e361159fd511be2729293aeee9593e1c1f4fc2d343ef8ef4c891d",
+    "phase": "training",
+    "population_count": 30,
+    "session_id": "VNBrain2-01KP7YWZFKKGMJE8MSZBDWXQZ2"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations in activity and sleep.",
+      "Missing individuals with gradual, long-term decline not captured by delta values.",
+      "Bias towards older individuals due to age being a primary factor."
+    ],
+    "guardrails": [
+      "Cross-validate findings with other features like exposure changes and number of events.",
+      "Consider the context of the city and distinct cities visited.",
+      "Implement a threshold for activity and sleep delta to avoid flagging minor fluctuations."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta",
+      "age"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Prioritize citizens with high risk hints and significant negative changes in activity and sleep, especially those in older age groups. Focus on identifying individuals whose well-being is likely declining."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.95,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "UISLLTXM",
+        "reason": "Highest risk hint (6.00), oldest age (82), and most significant negative changes in both activity (-43.00) and sleep (-41.00) among the selected IDs.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "UPPIPXVV",
+        "reason": "High risk hint (6.00), older age (77), and substantial negative changes in both activity (-37.00) and sleep (-39.00).",
+        "score_0_to_100": 92
+      },
+      {
+        "id": "QHIUGITL",
+        "reason": "High risk hint (6.00), older age (73), and significant negative changes in both activity (-34.00) and sleep (-34.00).",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "NANSUMZD",
+        "reason": "Moderate risk hint (5.00), significant negative changes in both activity (-34.00) and sleep (-48.00). The sleep delta is the most negative among the selected IDs.",
+        "score_0_to_100": 80
+      },
+      {
+        "id": "ERGZRVUY",
+        "reason": "Moderate risk hint (5.50), significant negative changes in both activity (-30.00) and sleep (-23.00). Younger age (31) compared to other IDs lowers the score slightly.",
+        "score_0_to_100": 75
+      }
+    ],
+    "recommended_ids": [
+      "UISLLTXM",
+      "UPPIPXVV",
+      "QHIUGITL",
+      "NANSUMZD",
+      "ERGZRVUY"
+    ]
+  },
+  "session_id": "VNBrain2-01KP7YWZFKKGMJE8MSZBDWXQZ2",
+  "status": "success"
+}

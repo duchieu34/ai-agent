@@ -1,0 +1,505 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 25132,
+    "output_tokens": 1992,
+    "total_tokens": 27124
+  },
+  "budget_profile": "high",
+  "candidate_pool_ids_after_prune": [
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+    "8289782a-685b-45cd-b0a1-2caed460b686",
+    "be65ac20-9102-4206-adba-b53380910ecf",
+    "c1da1f34-1760-4841-966f-cbed3f255dfb",
+    "00b11377-c3b6-484e-b70e-c7281fe51261",
+    "07e4b774-7ea2-4ca0-bb9d-d1e95a728b03",
+    "09e4d085-53f1-46c6-b28b-7d34dab52052",
+    "0c9b840e-5cda-440a-8d08-5f8cb74fe41c",
+    "0ed77000-3456-4052-8c6e-0a66f94561ca",
+    "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+    "2f585191-4e73-4850-805c-b02167082198",
+    "40d61e52-ee54-4aa0-a435-43bffce12aed",
+    "45f793a8-8223-4e65-9b6b-fa1b0a62d4aa",
+    "5309f3e1-a29e-4533-a44b-d8d7da5f4597",
+    "65eb47c9-3b12-40bc-b660-4a0f944fab22",
+    "6669e8f8-212b-4e7a-9615-0e59f923a35c",
+    "6f075509-4fae-44d3-b958-a72e0d435435",
+    "6f3885cf-c26e-454d-aba8-f1be0222f75d",
+    "7a010f53-8ad9-4b88-9bca-e93f6c705b62",
+    "7dc83725-605a-4fab-9e5a-017200a34b9a",
+    "8d9ec706-bd91-4458-af02-4bc1166c943d",
+    "95679cc6-814c-4fbe-86a3-b697b54f5d10",
+    "97ede41a-a012-4c6e-aa31-ee9d6dc27c26",
+    "9bcef53d-137b-4b82-8fca-3ea5f9978a37",
+    "9d3e4492-2021-426c-bf3c-5193b2d7de87",
+    "9d893a51-4843-47dc-b66e-1436341ff374",
+    "a0ba62a7-9a03-47c1-9575-7c26b2da5f1b",
+    "a3ebbbea-d56c-4627-bf6e-3f9ead9a4125",
+    "a839c005-7c5c-4e2d-b8d2-f07e99d7aedf",
+    "a8df2827-5aa0-4831-8f92-b2093d62739d",
+    "a9833409-4bb9-4764-b1c1-89521a636e36",
+    "c1ec5542-1bc7-49ba-a89c-4194f01d12c2",
+    "c7491b59-9186-42c8-a930-1411b13dfe13",
+    "d8711093-2453-4a74-8779-756014cc234d",
+    "dc26681a-fbb6-49bc-9481-9ae2996c93fb",
+    "dd81e9f0-e9b6-4586-a9f4-79994d6b1f21",
+    "e6e1cc47-780e-40cc-9f3e-01ac239e0a87",
+    "ea9f3acb-d2af-4b42-8588-9a7eb7823137",
+    "eee4f7cb-10ba-4f01-8a43-37cc11c74371",
+    "f187ddae-1a5d-4ff2-ad5a-565eae237d71",
+    "0d3ace95-9e82-41c7-a26b-203b8b792d24",
+    "44fdd50c-73f4-4f0d-8b03-0409ebd8890b",
+    "255834d5-c7c9-4311-804f-5abe227dea1f",
+    "6212031b-aec1-43fe-8818-a448e17e91eb",
+    "97c83f82-853e-4466-b4aa-7457625fa242",
+    "02c1c8e3-b088-4958-a047-0d32beb78292",
+    "4e53a923-af56-41e4-a804-67721ded06b7",
+    "d4de1c65-dc9e-4172-a158-ce2db0d214e2",
+    "ea8d19b0-8364-4f2e-93ef-43e511d9ca7b",
+    "139def3a-22bd-4465-90fa-d37d49f13070",
+    "1ac1500c-78d7-4f3a-8daa-ecdb877b2bad",
+    "f8efb252-3303-4666-a1db-1633bcfab23e",
+    "1ad62197-c368-4a1f-8286-22a811f5291e",
+    "1ede528a-c212-4d30-8e62-e901ca537f83",
+    "243504e1-f5a9-4ded-8262-d5b8a51cc1b9",
+    "3b41422b-60f2-4d59-838b-de85b5f2f6c7",
+    "4af1fdf6-8b4e-4d2b-ab32-97e2cd197792",
+    "52597177-e7c7-4bfd-9a18-eaa96db4123a",
+    "60929f96-b7a3-476b-b1f8-9a60298bea98",
+    "97bd8902-d29a-4041-b7ec-d8f1456bef42",
+    "9bdb7dc1-1804-447d-8eb9-a4146f27cd6b",
+    "b54bb23c-6703-4d7b-8149-411205534ef9",
+    "dcd4abb5-035a-42dc-b963-dd23a008eeaa",
+    "ed75ad30-d656-479b-9cca-06278aa87e62",
+    "0f400ab9-1f74-41ac-ba58-73d2aac629d4",
+    "0fd6eeff-e363-4bc9-a099-8f70e73e9884",
+    "1539373e-e909-4fcd-ba67-9f97ea4688bf",
+    "1f219c1d-fd99-47d6-b097-44253f85accb",
+    "5a3577a7-61e9-42b2-b8f1-a87d7e6fab4e",
+    "6650b3a2-f3e6-450a-80b6-5a54a14cbca8",
+    "6d85d330-aebe-4fd7-b6ee-e8b09640ab8e",
+    "7af2c254-522a-46e5-b50a-030653b16f2a",
+    "875367bb-b33a-40d4-bfed-7e9e0c5f6a46",
+    "f2798f49-f35c-4ecc-943e-30ee3d833c35",
+    "fce0c8bf-d8d8-4f3c-b29f-252867e15164",
+    "fff9978c-8395-490a-95a1-8347bc751a2b"
+  ],
+  "candidate_pool_size": 80,
+  "candidate_pool_size_after_prune": 80,
+  "candidate_pool_size_before_prune": 80,
+  "cap_applied": false,
+  "chain_path": "full-no-critic",
+  "contradiction_signals": [],
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686",
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+      "2f585191-4e73-4850-805c-b02167082198"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "lev1_pipeline_v3",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 44,
+  "extractor_result": {
+    "rationale": {
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116": "Moderate risk hint (2.0) with a significant amount (325.39) indicating potential fraud.",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": "High amount (325.39) with a risk hint of 2.0, indicating potential fraud.",
+      "2f585191-4e73-4850-805c-b02167082198": "Moderate risk hint (2.0) with a high amount (965.13) suggesting possible fraudulent activity.",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f": "Moderate risk hint (2.0) with a significant amount (99.80) and repeated transactions.",
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7": "High risk hint (2.7) with a low amount (22.21) indicating potential unusual behavior.",
+      "8289782a-685b-45cd-b0a1-2caed460b686": "Moderate risk hint (2.0) with a notable amount (125.55) and repeated sender behavior.",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": "Moderate risk hint (2.25) with a notable amount (46.09) and repeated sender behavior.",
+      "be65ac20-9102-4206-adba-b53380910ecf": "Moderate risk hint (2.0) with a suspicious amount (44.95) and repeated transactions.",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": "High risk hint (2.7) and a significant amount (106.15) suggest possible fraudulent activity.",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb": "Moderate risk hint (2.0) with a low amount (16.29) but unusual payment method (smartwatch)."
+    },
+    "selected_ids": [
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686",
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+      "2f585191-4e73-4850-805c-b02167082198"
+    ]
+  },
+  "final_ids": [
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+    "8289782a-685b-45cd-b0a1-2caed460b686",
+    "be65ac20-9102-4206-adba-b53380910ecf",
+    "c1da1f34-1760-4841-966f-cbed3f255dfb",
+    "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+    "2f585191-4e73-4850-805c-b02167082198"
+  ],
+  "finalize_debug": {
+    "anchor_source": "critic",
+    "cap_applied": false,
+    "cap_is_hard_final": true,
+    "cap_limit": 44,
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": false,
+      "scorer_confidence_0_to_1": 0.85
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [],
+    "fallback_applied": false,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116": "critic",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": "critic",
+      "2f585191-4e73-4850-805c-b02167082198": "critic",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f": "critic",
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7": "critic",
+      "8289782a-685b-45cd-b0a1-2caed460b686": "critic",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": "critic",
+      "be65ac20-9102-4206-adba-b53380910ecf": "critic",
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": "critic",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb": "critic"
+    },
+    "id_kept_supporting_sources": {
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116": [
+        "scorer",
+        "extractor"
+      ],
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": [
+        "scorer",
+        "extractor"
+      ],
+      "2f585191-4e73-4850-805c-b02167082198": [
+        "scorer",
+        "extractor"
+      ],
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f": [
+        "scorer",
+        "extractor"
+      ],
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7": [
+        "scorer",
+        "extractor"
+      ],
+      "8289782a-685b-45cd-b0a1-2caed460b686": [
+        "scorer",
+        "extractor"
+      ],
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": [
+        "scorer",
+        "extractor"
+      ],
+      "be65ac20-9102-4206-adba-b53380910ecf": [
+        "scorer",
+        "extractor"
+      ],
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": [
+        "scorer",
+        "extractor"
+      ],
+      "c1da1f34-1760-4841-966f-cbed3f255dfb": [
+        "scorer",
+        "extractor"
+      ]
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.2,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "critic",
+        "scorer",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686",
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+      "2f585191-4e73-4850-805c-b02167082198"
+    ],
+    "pre_finalize_ids": [
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686",
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+      "2f585191-4e73-4850-805c-b02167082198"
+    ],
+    "source_ids": {
+      "critic": [
+        "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "8289782a-685b-45cd-b0a1-2caed460b686",
+        "be65ac20-9102-4206-adba-b53380910ecf",
+        "c1da1f34-1760-4841-966f-cbed3f255dfb",
+        "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+        "2f585191-4e73-4850-805c-b02167082198"
+      ],
+      "decider": [],
+      "extractor": [
+        "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "8289782a-685b-45cd-b0a1-2caed460b686",
+        "be65ac20-9102-4206-adba-b53380910ecf",
+        "c1da1f34-1760-4841-966f-cbed3f255dfb",
+        "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+        "2f585191-4e73-4850-805c-b02167082198"
+      ],
+      "scorer": [
+        "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "8289782a-685b-45cd-b0a1-2caed460b686",
+        "be65ac20-9102-4206-adba-b53380910ecf",
+        "c1da1f34-1760-4841-966f-cbed3f255dfb",
+        "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+        "2f585191-4e73-4850-805c-b02167082198"
+      ]
+    },
+    "source_votes": {
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "2f585191-4e73-4850-805c-b02167082198": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "8289782a-685b-45cd-b0a1-2caed460b686": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "be65ac20-9102-4206-adba-b53380910ecf": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "c1da1f34-1760-4841-966f-cbed3f255dfb": [
+        "critic",
+        "extractor",
+        "scorer"
+      ]
+    }
+  },
+  "firewall_report": {
+    "dataset_key": "lev1_pipeline_v3",
+    "flagged_count": 10,
+    "flagged_ratio": 0.125,
+    "input_sha256": "3543f8fad103328ccebee672223a206e706927f338a2b0a1093ac2a6e8629421",
+    "mode": "challenge",
+    "output_sha256": "5c8b311088235fd4198c8dbd2406b058e2149dc1a28c6d6e2a3c589580891148",
+    "phase": "training",
+    "population_count": 80,
+    "session_id": "VNBrain2-01KPBCCGP5B7XMQ4GY83HNTPPJ"
+  },
+  "id_kept_by_primary_source": {
+    "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116": "critic",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10": "critic",
+    "2f585191-4e73-4850-805c-b02167082198": "critic",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f": "critic",
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7": "critic",
+    "8289782a-685b-45cd-b0a1-2caed460b686": "critic",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3": "critic",
+    "be65ac20-9102-4206-adba-b53380910ecf": "critic",
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046": "critic",
+    "c1da1f34-1760-4841-966f-cbed3f255dfb": "critic"
+  },
+  "mode": "challenge",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.85,
+  "planner_result": {
+    "failure_modes": [
+      "missing likely fraud cases",
+      "high false positive rate",
+      "overlooking evolving fraud patterns"
+    ],
+    "guardrails": [
+      "ensure a balance between sensitivity and specificity",
+      "monitor for changes in transaction behavior over time",
+      "review flagged transactions for context before escalation"
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "high risk_hint",
+      "unusual amount_max/amount_sum",
+      "repeated suspicious patterns (row_count)",
+      "unusual timing/location/device/merchant patterns"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Select transactions with high risk hints, unusual amounts, and repeated suspicious patterns while minimizing false positives."
+  },
+  "post_finalize_ids": [
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+    "8289782a-685b-45cd-b0a1-2caed460b686",
+    "be65ac20-9102-4206-adba-b53380910ecf",
+    "c1da1f34-1760-4841-966f-cbed3f255dfb",
+    "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+    "2f585191-4e73-4850-805c-b02167082198"
+  ],
+  "pre_finalize_ids": [
+    "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+    "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+    "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+    "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+    "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+    "8289782a-685b-45cd-b0a1-2caed460b686",
+    "be65ac20-9102-4206-adba-b53380910ecf",
+    "c1da1f34-1760-4841-966f-cbed3f255dfb",
+    "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+    "2f585191-4e73-4850-805c-b02167082198"
+  ],
+  "risk_elbow_cap": {
+    "applied": false,
+    "cap": null,
+    "eligible": false,
+    "reason": "not_checked"
+  },
+  "scorer_confidence_0_to_1": 0.85,
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.85,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+        "reason": "High risk hint (2.7) and a significant amount (106.15) suggest possible fraudulent activity.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+        "reason": "High risk hint (2.7) with a low amount (22.21) indicating potential unusual behavior.",
+        "score_0_to_100": 85
+      },
+      {
+        "id": "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+        "reason": "High amount (325.39) with a risk hint of 2.0, indicating potential fraud.",
+        "score_0_to_100": 80
+      },
+      {
+        "id": "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+        "reason": "Moderate risk hint (2.25) with a notable amount (46.09) and repeated sender behavior.",
+        "score_0_to_100": 75
+      },
+      {
+        "id": "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+        "reason": "Moderate risk hint (2.0) with a significant amount (99.80) and repeated transactions.",
+        "score_0_to_100": 70
+      },
+      {
+        "id": "8289782a-685b-45cd-b0a1-2caed460b686",
+        "reason": "Moderate risk hint (2.0) with a notable amount (125.55) and repeated sender behavior.",
+        "score_0_to_100": 70
+      },
+      {
+        "id": "be65ac20-9102-4206-adba-b53380910ecf",
+        "reason": "Moderate risk hint (2.0) with a suspicious amount (44.95) and repeated transactions.",
+        "score_0_to_100": 70
+      },
+      {
+        "id": "c1da1f34-1760-4841-966f-cbed3f255dfb",
+        "reason": "Moderate risk hint (2.0) with a low amount (16.29) but unusual payment method (smartwatch).",
+        "score_0_to_100": 65
+      },
+      {
+        "id": "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+        "reason": "Moderate risk hint (2.0) with a significant amount (325.39) indicating potential fraud.",
+        "score_0_to_100": 65
+      },
+      {
+        "id": "2f585191-4e73-4850-805c-b02167082198",
+        "reason": "Moderate risk hint (2.0) with a high amount (965.13) suggesting possible fraudulent activity.",
+        "score_0_to_100": 65
+      }
+    ],
+    "recommended_ids": [
+      "beaa4b03-0a2f-48a1-abb4-a5c7378ed046",
+      "3ba7708b-367a-4637-9b52-d8fea85dc8e7",
+      "2d22a0cd-8297-4d67-bd84-9e1ceaba5b10",
+      "9caf7a6f-afa8-43a8-b0bb-8a81d16f8cc3",
+      "32e73719-7b07-4c61-9fac-6c715c92ab1f",
+      "8289782a-685b-45cd-b0a1-2caed460b686",
+      "be65ac20-9102-4206-adba-b53380910ecf",
+      "c1da1f34-1760-4841-966f-cbed3f255dfb",
+      "1a02f1a5-2a7a-489f-8e43-cf6f4f8fe116",
+      "2f585191-4e73-4850-805c-b02167082198"
+    ]
+  },
+  "session_id": "VNBrain2-01KPBCCGP5B7XMQ4GY83HNTPPJ",
+  "status": "success"
+}

@@ -1,0 +1,17 @@
+{
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "full",
+  "critic_result": {},
+  "dataset_key": "public_lev_2",
+  "decider_result": {},
+  "effective_max_output_ids": 9,
+  "error": "Error code: 400 - {'error': {'message': 'google/google/gemini-2.0-flash-lite-001 is not a valid model ID', 'code': 400}, 'user_id': 'user_3CNPdZKjJCWxkNuM4BukoD7HbZf'}",
+  "extractor_result": {},
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {},
+  "scorer_result": {},
+  "session_id": "VNBrain2-01KP864923HP1EQBENVBXP8KQY",
+  "status": "error"
+}

@@ -1,0 +1,238 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 8674,
+    "output_tokens": 807,
+    "total_tokens": 9481
+  },
+  "budget_profile": "low",
+  "candidate_pool_ids_after_prune": [
+    "QOHAQRQI",
+    "GGGZNWZD",
+    "IGKMHDGI",
+    "ETGUMXJD",
+    "DQQTUJMK",
+    "FLDORAQE",
+    "JYEAPNDE",
+    "OKJSZSSW",
+    "UEAPYAVH",
+    "GPXWMDDO",
+    "UGACLBDX",
+    "BONIFJME",
+    "KIJIPGYX",
+    "TGUUITBW",
+    "RMYCVSOK"
+  ],
+  "candidate_pool_size": 15,
+  "candidate_pool_size_after_prune": 15,
+  "candidate_pool_size_before_prune": 15,
+  "cap_applied": false,
+  "chain_path": "full-no-critic",
+  "contradiction_signals": [],
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 9,
+  "extractor_result": {
+    "rationale": {
+      "GGGZNWZD": "Similar to QOHAQRQI, shows strong negative slopes in activity and sleep, rising exposure, and a notable risk hint.",
+      "IGKMHDGI": "Negative slopes in activity and sleep, rising exposure, and moderate consecutive declines in both metrics.",
+      "QOHAQRQI": "Significant negative slopes in both activity and sleep, high consecutive declines in activity, and rising exposure."
+    },
+    "selected_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ]
+  },
+  "final_ids": [
+    "GGGZNWZD",
+    "QOHAQRQI",
+    "IGKMHDGI"
+  ],
+  "finalize_debug": {
+    "anchor_source": "scorer",
+    "cap_applied": false,
+    "cap_is_hard_final": true,
+    "cap_limit": 9,
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": false,
+      "scorer_confidence_0_to_1": 0.95
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [],
+    "fallback_applied": false,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "GGGZNWZD": "scorer",
+      "IGKMHDGI": "scorer",
+      "QOHAQRQI": "scorer"
+    },
+    "id_kept_supporting_sources": {
+      "GGGZNWZD": [
+        "critic",
+        "extractor"
+      ],
+      "IGKMHDGI": [
+        "critic",
+        "extractor"
+      ],
+      "QOHAQRQI": [
+        "critic",
+        "extractor"
+      ]
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.2,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "scorer",
+        "critic",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI"
+    ],
+    "pre_finalize_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI"
+    ],
+    "source_ids": {
+      "critic": [
+        "GGGZNWZD",
+        "QOHAQRQI",
+        "IGKMHDGI"
+      ],
+      "decider": [],
+      "extractor": [
+        "QOHAQRQI",
+        "GGGZNWZD",
+        "IGKMHDGI"
+      ],
+      "scorer": [
+        "GGGZNWZD",
+        "QOHAQRQI",
+        "IGKMHDGI"
+      ]
+    },
+    "source_votes": {
+      "GGGZNWZD": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "IGKMHDGI": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "QOHAQRQI": [
+        "critic",
+        "extractor",
+        "scorer"
+      ]
+    }
+  },
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 3,
+    "flagged_ratio": 0.2,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "dee6f67b04b1d84fe6fb216e22b482d7c0a865397181c7a1e88e6045d80e9351",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP898FV37Z0JGTECWXWCR3GD"
+  },
+  "id_kept_by_primary_source": {
+    "GGGZNWZD": "scorer",
+    "IGKMHDGI": "scorer",
+    "QOHAQRQI": "scorer"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.75,
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations misidentified as long-term trends.",
+      "Missing individuals with slow, gradual declines that don't trigger consecutive decline counts.",
+      "Over-reliance on risk_hint, potentially missing individuals with emerging issues."
+    ],
+    "guardrails": [
+      "Cross-validate declining activity/sleep with rising exposure to confirm a holistic decline.",
+      "Avoid selecting candidates based solely on risk_hint without supporting trend data.",
+      "Ensure selected candidates exhibit declines across multiple time windows (delta, slope, consecutive declines)."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "Negative activity_slope and sleep_slope",
+      "High activity_consec_declines and sleep_consec_declines",
+      "Positive exposure_slope",
+      "High risk_hint"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Prioritize candidates with multiple declining indicators (activity, sleep) and rising exposure. Focus on slope and consecutive declines as key features. Use risk_hint as a secondary filter. Given the low budget, aim for high precision by focusing on strong signals."
+  },
+  "post_finalize_ids": [
+    "GGGZNWZD",
+    "QOHAQRQI",
+    "IGKMHDGI"
+  ],
+  "pre_finalize_ids": [
+    "GGGZNWZD",
+    "QOHAQRQI",
+    "IGKMHDGI"
+  ],
+  "scorer_confidence_0_to_1": 0.95,
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.95,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "GGGZNWZD",
+        "reason": "Strongest evidence of suboptimal well-being trajectory. High negative slopes in both activity and sleep (-3.258, -4.247), rising exposure (3.275), and a high risk hint (13.00). Consecutive declines in activity (5) further support this.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "QOHAQRQI",
+        "reason": "Very strong evidence. Significant negative slopes in activity and sleep (-2.974, -2.879), high consecutive declines in activity (8), and rising exposure (3.358). Risk hint is also high (13.50).",
+        "score_0_to_100": 92
+      },
+      {
+        "id": "IGKMHDGI",
+        "reason": "Good evidence. Negative slopes in activity and sleep (-3.055, -2.819), rising exposure (3.626), and moderate consecutive declines in both metrics (3). Risk hint is also relatively high (12.00).",
+        "score_0_to_100": 85
+      }
+    ],
+    "recommended_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI"
+    ]
+  },
+  "session_id": "VNBrain2-01KP898FV37Z0JGTECWXWCR3GD",
+  "status": "success"
+}

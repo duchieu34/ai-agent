@@ -1,0 +1,132 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 16284,
+    "output_tokens": 1211,
+    "total_tokens": 17495
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 30,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "ERGZRVUY",
+      "NANSUMZD",
+      "UISLLTXM"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_3",
+  "decider_result": {},
+  "effective_max_output_ids": 18,
+  "extractor_result": {
+    "rationale": {
+      "ERGZRVUY": "Negative slopes in both activity and sleep, with a high number of consecutive activity and sleep declines, and increasing exposure.",
+      "NANSUMZD": "Negative slopes in both activity and sleep, with a high number of consecutive sleep declines, and increasing exposure.",
+      "QHIUGITL": "Significant negative slopes in activity and sleep, coupled with a high number of consecutive declines in both, and increasing exposure.",
+      "UISLLTXM": "Pronounced negative slope in sleep, and a notable negative slope in activity, with increasing exposure.",
+      "UPPIPXVV": "Strong negative slopes in both activity and sleep, with a high number of consecutive activity declines and increasing exposure."
+    },
+    "selected_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "ERGZRVUY",
+      "NANSUMZD"
+    ]
+  },
+  "final_ids": [
+    "UPPIPXVV",
+    "QHIUGITL",
+    "ERGZRVUY",
+    "NANSUMZD",
+    "UISLLTXM"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_3",
+    "flagged_count": 5,
+    "flagged_ratio": 0.16666666666666666,
+    "input_sha256": "e72f15fce9f2b2bcad14c4bc55bff22402b3d0dd109db16f9a31228dfa9115a9",
+    "mode": "sandbox",
+    "output_sha256": "0b665cf0c74dd3487d771d4b84c92b2f8ad72a5a7087407001b26d8aea88c00f",
+    "phase": "training",
+    "population_count": 30,
+    "session_id": "VNBrain2-01KP861M3QD0E7HNBQ5W6A7HRN"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Over-reliance on 'risk_hint' without considering trajectory indicators.",
+      "Missing individuals with declining trends that have not yet resulted in very low absolute values.",
+      "False positives due to short-term fluctuations misidentified as trends.",
+      "Ignoring the interplay between different indicators (e.g., focusing only on activity decline).",
+      "Inability to distinguish between a consistently low state and a declining trajectory."
+    ],
+    "guardrails": [
+      "Ensure that at least two distinct trajectory indicators (slope or consecutive declines) are considered for each candidate.",
+      "Prioritize candidates showing declining trends in both activity and sleep.",
+      "Weight candidates with increasing exposure alongside declining activity/sleep higher.",
+      "Do not solely rely on the 'risk_hint' score; it's a supplementary signal.",
+      "The final selection must be based on a holistic assessment of the provided feature lines, not just a single metric."
+    ],
+    "planner_confidence_0_to_1": 0.9,
+    "priority_signals": [
+      "negative activity_slope",
+      "negative sleep_slope",
+      "positive exposure_slope",
+      "activity_consec_declines > 2",
+      "sleep_consec_declines > 2",
+      "simultaneous negative activity_slope and sleep_slope",
+      "simultaneous negative activity_slope and positive exposure_slope",
+      "simultaneous negative sleep_slope and positive exposure_slope"
+    ],
+    "route_recommendation": "full",
+    "strategy": "Identify citizens with suboptimal well-being trajectories by prioritizing those exhibiting a declining trend across multiple indicators, specifically focusing on negative slopes in activity and sleep, coupled with increasing environmental exposure. The 'risk_hint' feature will be used as an initial filter, but the primary decision will be based on the combination of slope and consecutive decline indicators. Cross-indicator patterns (e.g., activity and sleep both declining) will be weighted higher."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.95,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "UPPIPXVV",
+        "reason": "Strong negative slopes in both activity (-1.115) and sleep (-1.191). High activity consecutive declines (4) and increasing exposure (1.267). Meets multiple criteria for a suboptimal trajectory.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "QHIUGITL",
+        "reason": "Significant negative slopes in activity (-1.100) and sleep (-1.111). High consecutive declines in both (3 each) and increasing exposure (1.264). Strong indicators of a declining well-being.",
+        "score_0_to_100": 93
+      },
+      {
+        "id": "ERGZRVUY",
+        "reason": "Negative slopes in activity (-1.049) and sleep (-0.849). High consecutive declines in both (3 each) and strongly increasing exposure (1.404). Multiple strong indicators.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "NANSUMZD",
+        "reason": "Negative slopes in activity (-1.061) and sleep (-1.112). High sleep consecutive declines (3) and increasing exposure (1.208). Meets multiple criteria for a suboptimal trajectory.",
+        "score_0_to_100": 88
+      },
+      {
+        "id": "UISLLTXM",
+        "reason": "Pronounced negative slope in sleep (-1.457) and notable negative slope in activity (-1.094). Increasing exposure (1.210). While consecutive declines are 2, the strong slopes and increasing exposure are significant.",
+        "score_0_to_100": 85
+      }
+    ],
+    "recommended_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "ERGZRVUY",
+      "NANSUMZD",
+      "UISLLTXM"
+    ]
+  },
+  "session_id": "VNBrain2-01KP861M3QD0E7HNBQ5W6A7HRN",
+  "status": "success"
+}

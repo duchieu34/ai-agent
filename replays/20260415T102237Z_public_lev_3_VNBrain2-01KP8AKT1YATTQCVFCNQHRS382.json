@@ -1,0 +1,388 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 16004,
+    "output_tokens": 1044,
+    "total_tokens": 17048
+  },
+  "budget_profile": "low",
+  "candidate_pool_ids_after_prune": [
+    "UPPIPXVV",
+    "QHIUGITL",
+    "UISLLTXM",
+    "ERGZRVUY",
+    "NANSUMZD",
+    "SBXIDGUU",
+    "RNTNCKYE",
+    "THBNCXVE",
+    "LVCSDQET",
+    "TVTHMCWI",
+    "WZSVQCDR",
+    "BMPOTIFN",
+    "DPGYNMKN",
+    "GKXTLRIZ",
+    "KRPGSKCH",
+    "ODOPLOUK",
+    "OKFRZTFR",
+    "WWVYDVEF",
+    "XDSXRGHX",
+    "YMVTHTGN",
+    "AXWRAMKB",
+    "JPTJKBYK",
+    "DBJFADVJ",
+    "KRCTQOSM",
+    "NEIJPWOU",
+    "OSSURNNV",
+    "UPGGVIQC",
+    "VKEIFVZP",
+    "ZXSGVPZY",
+    "XZXWWTMD"
+  ],
+  "candidate_pool_size": 30,
+  "candidate_pool_size_after_prune": 30,
+  "candidate_pool_size_before_prune": 30,
+  "cap_applied": true,
+  "chain_path": "full-no-critic",
+  "contradiction_signals": [],
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "NANSUMZD",
+      "ERGZRVUY"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_3",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 5,
+  "extractor_result": {
+    "rationale": {
+      "ERGZRVUY": "Negative activity_slope and sleep_slope, positive exposure_slope, and multiple consecutive declines in activity and sleep.",
+      "NANSUMZD": "Negative activity_slope and sleep_slope, positive exposure_slope, and multiple consecutive declines in activity and sleep.",
+      "QHIUGITL": "High risk_hint, negative activity_slope and sleep_slope, positive exposure_slope, and multiple consecutive declines in activity and sleep.",
+      "UISLLTXM": "High risk_hint, negative activity_slope and sleep_slope, positive exposure_slope, and multiple consecutive declines in activity and sleep.",
+      "UPPIPXVV": "High risk_hint, negative activity_slope and sleep_slope, positive exposure_slope, and multiple consecutive declines in activity and sleep."
+    },
+    "selected_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "ERGZRVUY",
+      "NANSUMZD"
+    ]
+  },
+  "final_ids": [
+    "UPPIPXVV",
+    "QHIUGITL",
+    "UISLLTXM",
+    "NANSUMZD",
+    "ERGZRVUY"
+  ],
+  "finalize_debug": {
+    "anchor_source": "scorer",
+    "cap_applied": true,
+    "cap_is_hard_final": true,
+    "cap_limit": 5,
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": false,
+      "scorer_confidence_0_to_1": 0.95
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [],
+    "fallback_applied": false,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "ERGZRVUY": "scorer",
+      "NANSUMZD": "scorer",
+      "QHIUGITL": "scorer",
+      "UISLLTXM": "scorer",
+      "UPPIPXVV": "scorer"
+    },
+    "id_kept_supporting_sources": {
+      "ERGZRVUY": [
+        "critic",
+        "extractor"
+      ],
+      "NANSUMZD": [
+        "critic",
+        "extractor"
+      ],
+      "QHIUGITL": [
+        "critic",
+        "extractor"
+      ],
+      "UISLLTXM": [
+        "critic",
+        "extractor"
+      ],
+      "UPPIPXVV": [
+        "critic",
+        "extractor"
+      ]
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.2,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "scorer",
+        "critic",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "NANSUMZD",
+      "ERGZRVUY"
+    ],
+    "pre_finalize_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "NANSUMZD",
+      "ERGZRVUY"
+    ],
+    "source_ids": {
+      "critic": [
+        "UPPIPXVV",
+        "QHIUGITL",
+        "UISLLTXM",
+        "NANSUMZD",
+        "ERGZRVUY"
+      ],
+      "decider": [],
+      "extractor": [
+        "UPPIPXVV",
+        "QHIUGITL",
+        "UISLLTXM",
+        "ERGZRVUY",
+        "NANSUMZD"
+      ],
+      "scorer": [
+        "UPPIPXVV",
+        "QHIUGITL",
+        "UISLLTXM",
+        "NANSUMZD",
+        "ERGZRVUY"
+      ]
+    },
+    "source_votes": {
+      "ERGZRVUY": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "NANSUMZD": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "QHIUGITL": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "UISLLTXM": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "UPPIPXVV": [
+        "critic",
+        "extractor",
+        "scorer"
+      ]
+    }
+  },
+  "firewall_report": {
+    "dataset_key": "public_lev_3",
+    "flagged_count": 5,
+    "flagged_ratio": 0.16666666666666666,
+    "input_sha256": "e72f15fce9f2b2bcad14c4bc55bff22402b3d0dd109db16f9a31228dfa9115a9",
+    "mode": "sandbox",
+    "output_sha256": "ca317989933a42e7b889bbd8efd43973b4ed248aca68bb8a7cefab502ed38bcb",
+    "phase": "training",
+    "population_count": 30,
+    "session_id": "VNBrain2-01KP8AKT1YATTQCVFCNQHRS382"
+  },
+  "id_kept_by_primary_source": {
+    "ERGZRVUY": "scorer",
+    "NANSUMZD": "scorer",
+    "QHIUGITL": "scorer",
+    "UISLLTXM": "scorer",
+    "UPPIPXVV": "scorer"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.75,
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations misidentified as long-term trends.",
+      "Missing individuals with gradual declines or declines in metrics not captured by activity, sleep, and exposure.",
+      "Over-reliance on deterministic features leading to neglect of nuanced patterns."
+    ],
+    "guardrails": [
+      "Cross-validate identified individuals with age and city to identify potential confounding factors.",
+      "Manually review a sample of identified individuals to assess the validity of the identified trends.",
+      "Ensure the LLM remains the central decision-maker, using deterministic features as supporting evidence only."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "Negative activity_slope and sleep_slope",
+      "Positive exposure_slope",
+      "High activity_consec_declines and sleep_consec_declines",
+      "Elevated risk_hint"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Focus on identifying citizens with declining activity and sleep indices, coupled with rising environmental exposure, as indicators of suboptimal well-being trajectories. Prioritize candidates with multiple consecutive declines and negative slopes in activity and sleep, and positive slopes in exposure. Leverage risk_hint as a secondary filter."
+  },
+  "post_finalize_ids": [
+    "UPPIPXVV",
+    "QHIUGITL",
+    "UISLLTXM",
+    "NANSUMZD",
+    "ERGZRVUY"
+  ],
+  "pre_finalize_ids": [
+    "UPPIPXVV",
+    "QHIUGITL",
+    "UISLLTXM",
+    "NANSUMZD",
+    "ERGZRVUY"
+  ],
+  "risk_elbow_cap": {
+    "applied": true,
+    "boundary_ratio": 3.1212121212121215,
+    "cap": 5,
+    "drops": [
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      7.000000000000001,
+      0.2999999999999998,
+      0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.19999999999999996,
+      0.0,
+      0.30000000000000004,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5
+    ],
+    "eligible": true,
+    "max_drop": 7.000000000000001,
+    "max_drop_index": 4,
+    "mean_drop": 0.3724137931034483,
+    "reason": "elbow_detected",
+    "scores": [
+      11.8,
+      11.3,
+      11.3,
+      10.8,
+      10.3,
+      3.3,
+      3.0,
+      3.0,
+      2.5,
+      2.5,
+      2.5,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      1.8,
+      1.8,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.0
+    ],
+    "second_drop": 0.5,
+    "thresholds": {
+      "drop_multiple": 2.0,
+      "min_drop": 4.0,
+      "min_ratio": 2.5
+    }
+  },
+  "scorer_confidence_0_to_1": 0.95,
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.95,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "UPPIPXVV",
+        "reason": "Strongest evidence: High risk_hint, significant negative slopes in activity and sleep, positive exposure slope, and multiple consecutive declines in both activity and sleep. All priority signals strongly present.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "QHIUGITL",
+        "reason": "Very strong evidence: High risk_hint, negative slopes in activity and sleep, positive exposure slope, and multiple consecutive declines in both activity and sleep. Similar to UPPIPXVV, but slightly lower risk_hint.",
+        "score_0_to_100": 92
+      },
+      {
+        "id": "UISLLTXM",
+        "reason": "Strong evidence: High risk_hint, negative slopes in activity and sleep, positive exposure slope, and consecutive declines in both activity and sleep. Slightly fewer consecutive declines than the top two.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "NANSUMZD",
+        "reason": "Moderate evidence: Negative slopes in activity and sleep, positive exposure slope, and multiple consecutive declines in sleep. Lower risk_hint than the top candidates, but still a clear negative trajectory.",
+        "score_0_to_100": 85
+      },
+      {
+        "id": "ERGZRVUY",
+        "reason": "Moderate evidence: Negative slopes in activity and sleep, positive exposure slope, and multiple consecutive declines in both activity and sleep. Lacks the high risk_hint of the top candidates, but the trend is concerning.",
+        "score_0_to_100": 80
+      }
+    ],
+    "recommended_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "NANSUMZD",
+      "ERGZRVUY"
+    ]
+  },
+  "session_id": "VNBrain2-01KP8AKT1YATTQCVFCNQHRS382",
+  "status": "success"
+}

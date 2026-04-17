@@ -1,0 +1,521 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 20571,
+    "output_tokens": 3010,
+    "total_tokens": 23581
+  },
+  "budget_profile": "low",
+  "candidate_pool_ids_after_prune": [
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+    "4e5f0e1f-35db-4c84-a626-132b87512675",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+    "1f73a7a1-46e5-409b-ab78-80382250a959",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+    "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+    "e0c4fcae-4141-4104-8860-eb1809a4a443",
+    "3137f295-438f-4acb-ad85-725e4f8024ce",
+    "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9",
+    "2bab08fb-4903-439f-9d24-5c11689b2f9f",
+    "eb50e2c7-21c7-4e8d-8791-72e85e6a4979",
+    "ef326a98-94da-426b-aad9-4535e5501298",
+    "e8a67450-2c08-466b-8858-c5b72164d706",
+    "b6d0c2c7-688d-4d85-89d9-08655f9662e1",
+    "522e8649-c3d4-4139-ae2e-d1e6f6d70043",
+    "fa283969-1faf-4cca-806f-2818c32906a0",
+    "587d0d03-7bae-4b95-bf99-4a1e3ec9a4df",
+    "0e1e7692-1424-457b-995e-fa22c85ce92a",
+    "0ddb44e7-1374-47ac-b97d-448235328e46",
+    "da6396b3-727d-4058-bfce-826366ff094a",
+    "797df8c6-4869-4ed4-8568-47913b507d82",
+    "b718358e-e74e-4e80-9f89-30d711831ab3",
+    "35071198-4672-4ad4-a627-68ba8a027032",
+    "eb189b28-35ff-4721-8371-88784db669f8",
+    "3413ac97-5b1e-4d5c-aa82-0b789fb1005d",
+    "100b56ae-028c-41ba-a851-50847e52c3dd",
+    "92dec191-abeb-4d2c-98d2-597fa96930be",
+    "0496e5c2-8c1d-439b-b8ca-faa8acef6bbb",
+    "1c379f31-3af2-4f17-9f22-cfea5e907c52",
+    "fc59e9a2-639a-434d-aab1-aa580dce3adc",
+    "ef5a00b8-ebd4-4a11-80be-a4fb1ed6bc6d",
+    "6d04ebf1-7293-4326-9156-7ea57c571b30",
+    "492a746f-5fe2-448f-9de9-db21e2de2384",
+    "1d55b8a3-5ae0-4e4f-8698-06758268c327",
+    "2f30675c-45e5-48fe-9e04-b042fd487679",
+    "90223607-0971-4227-8966-54da453026dc",
+    "102f511e-6d04-4bc9-9811-4468f7fa12df"
+  ],
+  "candidate_pool_size": 40,
+  "candidate_pool_size_after_prune": 40,
+  "candidate_pool_size_before_prune": 300,
+  "cap_applied": false,
+  "chain_path": "full-with-critic",
+  "contradiction_signals": [],
+  "critic_ran": true,
+  "critic_result": {
+    "critic_notes": "All IDs selected by the Extractor and Scorer are retained, as they all exhibit both a high risk_hint and a large amount, aligning with the planner's strategy. No IDs were removed due to lack of supporting evidence.",
+    "final_ids": [
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+      "4e5f0e1f-35db-4c84-a626-132b87512675",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+      "1f73a7a1-46e5-409b-ab78-80382250a959",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+      "e0c4fcae-4141-4104-8860-eb1809a4a443",
+      "3137f295-438f-4acb-ad85-725e4f8024ce",
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "lev3_submit",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 24,
+  "extractor_result": {
+    "rationale": {
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9": "High risk_hint and amount.",
+      "1f73a7a1-46e5-409b-ab78-80382250a959": "High risk_hint and amount.",
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9": "High risk_hint and amount.",
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e": "High risk_hint and amount.",
+      "3137f295-438f-4acb-ad85-725e4f8024ce": "High risk_hint and amount.",
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e": "High risk_hint and amount.",
+      "4e5f0e1f-35db-4c84-a626-132b87512675": "High risk_hint and amount.",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752": "High risk_hint and amount.",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416": "High risk_hint and amount.",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146": "High risk_hint and amount.",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda": "High risk_hint and amount.",
+      "e0c4fcae-4141-4104-8860-eb1809a4a443": "High risk_hint and amount."
+    },
+    "selected_ids": [
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+      "4e5f0e1f-35db-4c84-a626-132b87512675",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+      "1f73a7a1-46e5-409b-ab78-80382250a959",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+      "e0c4fcae-4141-4104-8860-eb1809a4a443",
+      "3137f295-438f-4acb-ad85-725e4f8024ce",
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+    ]
+  },
+  "final_ids": [
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+    "4e5f0e1f-35db-4c84-a626-132b87512675",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+    "1f73a7a1-46e5-409b-ab78-80382250a959",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+    "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+    "e0c4fcae-4141-4104-8860-eb1809a4a443",
+    "3137f295-438f-4acb-ad85-725e4f8024ce",
+    "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+  ],
+  "finalize_debug": {
+    "anchor_source": "critic",
+    "cap_applied": false,
+    "cap_is_hard_final": true,
+    "cap_limit": 24,
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": false,
+      "scorer_confidence_0_to_1": 0.55
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [],
+    "fallback_applied": false,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9": "critic",
+      "1f73a7a1-46e5-409b-ab78-80382250a959": "critic",
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9": "critic",
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e": "critic",
+      "3137f295-438f-4acb-ad85-725e4f8024ce": "critic",
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e": "critic",
+      "4e5f0e1f-35db-4c84-a626-132b87512675": "critic",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752": "critic",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416": "critic",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146": "critic",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda": "critic",
+      "e0c4fcae-4141-4104-8860-eb1809a4a443": "critic"
+    },
+    "id_kept_supporting_sources": {
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9": [
+        "scorer",
+        "extractor"
+      ],
+      "1f73a7a1-46e5-409b-ab78-80382250a959": [
+        "scorer",
+        "extractor"
+      ],
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9": [
+        "scorer",
+        "extractor"
+      ],
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e": [
+        "scorer",
+        "extractor"
+      ],
+      "3137f295-438f-4acb-ad85-725e4f8024ce": [
+        "scorer",
+        "extractor"
+      ],
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e": [
+        "scorer",
+        "extractor"
+      ],
+      "4e5f0e1f-35db-4c84-a626-132b87512675": [
+        "scorer",
+        "extractor"
+      ],
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752": [
+        "scorer",
+        "extractor"
+      ],
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416": [
+        "scorer",
+        "extractor"
+      ],
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146": [
+        "scorer",
+        "extractor"
+      ],
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda": [
+        "scorer",
+        "extractor"
+      ],
+      "e0c4fcae-4141-4104-8860-eb1809a4a443": [
+        "scorer",
+        "extractor"
+      ]
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.2,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "critic",
+        "scorer",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+      "4e5f0e1f-35db-4c84-a626-132b87512675",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+      "1f73a7a1-46e5-409b-ab78-80382250a959",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+      "e0c4fcae-4141-4104-8860-eb1809a4a443",
+      "3137f295-438f-4acb-ad85-725e4f8024ce",
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+    ],
+    "pre_finalize_ids": [
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+      "4e5f0e1f-35db-4c84-a626-132b87512675",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+      "1f73a7a1-46e5-409b-ab78-80382250a959",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+      "e0c4fcae-4141-4104-8860-eb1809a4a443",
+      "3137f295-438f-4acb-ad85-725e4f8024ce",
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+    ],
+    "source_ids": {
+      "critic": [
+        "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+        "4e5f0e1f-35db-4c84-a626-132b87512675",
+        "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+        "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+        "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+        "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+        "1f73a7a1-46e5-409b-ab78-80382250a959",
+        "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+        "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+        "e0c4fcae-4141-4104-8860-eb1809a4a443",
+        "3137f295-438f-4acb-ad85-725e4f8024ce",
+        "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+      ],
+      "decider": [],
+      "extractor": [
+        "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+        "4e5f0e1f-35db-4c84-a626-132b87512675",
+        "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+        "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+        "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+        "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+        "1f73a7a1-46e5-409b-ab78-80382250a959",
+        "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+        "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+        "e0c4fcae-4141-4104-8860-eb1809a4a443",
+        "3137f295-438f-4acb-ad85-725e4f8024ce",
+        "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+      ],
+      "scorer": [
+        "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+        "4e5f0e1f-35db-4c84-a626-132b87512675",
+        "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+        "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+        "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+        "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+        "1f73a7a1-46e5-409b-ab78-80382250a959",
+        "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+        "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+        "e0c4fcae-4141-4104-8860-eb1809a4a443",
+        "3137f295-438f-4acb-ad85-725e4f8024ce",
+        "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+      ]
+    },
+    "source_votes": {
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "1f73a7a1-46e5-409b-ab78-80382250a959": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "3137f295-438f-4acb-ad85-725e4f8024ce": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "4e5f0e1f-35db-4c84-a626-132b87512675": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "e0c4fcae-4141-4104-8860-eb1809a4a443": [
+        "critic",
+        "extractor",
+        "scorer"
+      ]
+    }
+  },
+  "firewall_report": {
+    "dataset_key": "lev3_submit",
+    "flagged_count": 12,
+    "flagged_ratio": 0.3,
+    "input_sha256": "fa036c1f025ab6cadad26c2ac4970edbab0c4723a2eb30172edd5eca9ffb339b",
+    "mode": "challenge",
+    "output_sha256": "3ab712f736624ec7c202b3f11e1cc4f0b116224ac08ec808ba97be2f6ebda233",
+    "phase": "training",
+    "population_count": 40,
+    "session_id": "VNBrain2-01KPBA9ASAVXV2FJR0VCJJXQG9"
+  },
+  "id_kept_by_primary_source": {
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9": "critic",
+    "1f73a7a1-46e5-409b-ab78-80382250a959": "critic",
+    "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9": "critic",
+    "2fb2222c-f3fa-451a-8dc8-97cab8e7543e": "critic",
+    "3137f295-438f-4acb-ad85-725e4f8024ce": "critic",
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e": "critic",
+    "4e5f0e1f-35db-4c84-a626-132b87512675": "critic",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752": "critic",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416": "critic",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146": "critic",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda": "critic",
+    "e0c4fcae-4141-4104-8860-eb1809a4a443": "critic"
+  },
+  "mode": "challenge",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.8,
+  "planner_result": {
+    "failure_modes": [
+      "Missing evolving fraud patterns by focusing solely on amount anomalies.",
+      "Generating too many false positives due to overly sensitive anomaly detection.",
+      "Failing to adapt to new fraud signals as the environment changes."
+    ],
+    "guardrails": [
+      "Regularly re-evaluate the effectiveness of the selected features and adjust the strategy accordingly.",
+      "Monitor the false positive rate and adjust thresholds to maintain an acceptable level.",
+      "Explore new features and data sources to identify emerging fraud patterns."
+    ],
+    "planner_confidence_0_to_1": 0.8,
+    "priority_signals": [
+      "High risk_hint",
+      "Unusual amount_max/amount_sum",
+      "Repeated suspicious patterns (row_count > 1 - not applicable here but keep in mind for future iterations)",
+      "Unusual timing/location/device/merchant patterns (if available in the data)"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Prioritize transactions with high risk hints and unusual amounts. Since fraud evolves, investigate context around these transactions, focusing on location, timing, and involved parties. Given the low budget profile, focus on the highest risk signals first."
+  },
+  "post_finalize_ids": [
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+    "4e5f0e1f-35db-4c84-a626-132b87512675",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+    "1f73a7a1-46e5-409b-ab78-80382250a959",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+    "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+    "e0c4fcae-4141-4104-8860-eb1809a4a443",
+    "3137f295-438f-4acb-ad85-725e4f8024ce",
+    "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+  ],
+  "pre_finalize_ids": [
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+    "4e5f0e1f-35db-4c84-a626-132b87512675",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+    "1f73a7a1-46e5-409b-ab78-80382250a959",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+    "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+    "e0c4fcae-4141-4104-8860-eb1809a4a443",
+    "3137f295-438f-4acb-ad85-725e4f8024ce",
+    "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+  ],
+  "risk_elbow_cap": {
+    "applied": false,
+    "cap": null,
+    "eligible": false,
+    "reason": "not_checked"
+  },
+  "scorer_confidence_0_to_1": 0.55,
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.55,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "4e5f0e1f-35db-4c84-a626-132b87512675",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 87
+      },
+      {
+        "id": "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 84
+      },
+      {
+        "id": "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 81
+      },
+      {
+        "id": "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 78
+      },
+      {
+        "id": "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 75
+      },
+      {
+        "id": "1f73a7a1-46e5-409b-ab78-80382250a959",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 72
+      },
+      {
+        "id": "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 69
+      },
+      {
+        "id": "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 66
+      },
+      {
+        "id": "e0c4fcae-4141-4104-8860-eb1809a4a443",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 63
+      },
+      {
+        "id": "3137f295-438f-4acb-ad85-725e4f8024ce",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 60
+      },
+      {
+        "id": "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9",
+        "reason": "Fallback: promoted from extractor shortlist due to empty scorer output.",
+        "score_0_to_100": 57
+      }
+    ],
+    "recommended_ids": [
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+      "4e5f0e1f-35db-4c84-a626-132b87512675",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+      "1f73a7a1-46e5-409b-ab78-80382250a959",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+      "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+      "e0c4fcae-4141-4104-8860-eb1809a4a443",
+      "3137f295-438f-4acb-ad85-725e4f8024ce",
+      "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9"
+    ]
+  },
+  "session_id": "VNBrain2-01KPBA9ASAVXV2FJR0VCJJXQG9",
+  "status": "success"
+}

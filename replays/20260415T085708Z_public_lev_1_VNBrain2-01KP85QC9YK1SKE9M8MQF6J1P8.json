@@ -1,0 +1,93 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 3956,
+    "output_tokens": 665,
+    "total_tokens": 4621
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_result": {},
+  "dominant_single_cap_applied": true,
+  "effective_max_output_ids": 1,
+  "extractor_result": {
+    "rationale": {
+      "DCGGXUWF": "Negative activity and sleep slopes, sleep consecutive declines >= 2, and positive exposure slope.",
+      "WNACROYX": "High risk_hint, negative activity and sleep slopes, multiple consecutive declines in both activity and sleep, and rising environmental exposure."
+    },
+    "selected_ids": [
+      "WNACROYX",
+      "DCGGXUWF"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 1,
+    "flagged_ratio": 0.2,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "af346cc8b4318c21bf24743f8b946e501c08b826579d4b0e5be0129ce6f6a89e",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP85QC9YK1SKE9M8MQF6J1P8"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations mistaken for long-term trends.",
+      "Missing individuals with slowly declining well-being that doesn't trigger the consecutive decline criteria.",
+      "Over-reliance on risk_hint, potentially biasing towards certain demographic groups or locations."
+    ],
+    "guardrails": [
+      "Cross-validate signals: require at least two indicators (activity, sleep, exposure) to show a concerning trend.",
+      "Avoid selecting candidates based solely on risk_hint; use it as a secondary sorting factor.",
+      "Consider the magnitude of the slopes and deltas, not just the direction."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "Negative activity_slope and sleep_slope",
+      "Positive exposure_slope",
+      "activity_consec_declines >= 2",
+      "sleep_consec_declines >= 2",
+      "High risk_hint"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Prioritize citizens with multiple indicators of declining well-being (activity, sleep) and rising environmental exposure. Focus on negative slopes and consecutive declines in activity and sleep, combined with positive slopes in exposure. Use risk_hint as a secondary filter. Given the low budget, a fast route is preferred, focusing on the most prominent signals."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "Strong evidence of decline: high risk_hint, significant negative slopes in activity and sleep, multiple consecutive declines in both, and a rising exposure slope. The deltas are also substantial, indicating a rapid deterioration.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "DCGGXUWF",
+        "reason": "Moderate evidence of decline: negative activity and sleep slopes, consecutive sleep declines, and a positive exposure slope. However, the activity delta is relatively small, and the risk_hint is lower than WNACROYX.",
+        "score_0_to_100": 75
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX"
+    ]
+  },
+  "session_id": "VNBrain2-01KP85QC9YK1SKE9M8MQF6J1P8",
+  "status": "success"
+}

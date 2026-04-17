@@ -1,0 +1,103 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 5532,
+    "output_tokens": 822,
+    "total_tokens": 6354
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_result": {},
+  "effective_max_output_ids": 4,
+  "extractor_result": {
+    "rationale": {
+      "GGGZNWZD": "High risk hint (5.00) and significant negative changes in both activity (-35.00) and sleep (-47.00).",
+      "IGKMHDGI": "High risk hint (5.00) and notable negative changes in both activity (-33.00) and sleep (-38.00).",
+      "QOHAQRQI": "High risk hint (5.00) and substantial negative changes in both activity (-33.00) and sleep (-49.00)."
+    },
+    "selected_ids": [
+      "GGGZNWZD",
+      "IGKMHDGI",
+      "QOHAQRQI"
+    ]
+  },
+  "final_ids": [
+    "QOHAQRQI",
+    "GGGZNWZD",
+    "IGKMHDGI"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 3,
+    "flagged_ratio": 0.2,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "291cbd08aa7f4e631ba13bbca20eb37de86ac90fd73b820350c1e0ea8b1190b6",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP807RXGTVM79942395GAM16"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations in activity and sleep.",
+      "Missing individuals with gradual declines in well-being that don't trigger immediate alerts.",
+      "Over-reliance on deterministic features, potentially overlooking nuanced indicators of well-being."
+    ],
+    "guardrails": [
+      "Cross-validate findings with other available data sources (if any).",
+      "Implement a feedback loop to refine the LLM's decision-making process based on real-world outcomes.",
+      "Regularly review and update the deterministic features to ensure they remain relevant and accurate."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "The LLM will analyze the candidate pool, prioritizing individuals with high risk hints and significant negative changes in activity and sleep patterns. The deterministic features will be used as supporting evidence to identify citizens with potentially declining well-being trajectories. The LLM will focus on identifying individuals whose activity and sleep patterns are deteriorating, potentially indicating a decline in their overall health and well-being. The LLM will use the risk_hint as a primary filter, followed by activity_delta and sleep_delta to refine the selection."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.95,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "QOHAQRQI",
+        "reason": "Highest sleep delta (-49.00) among those with a high risk hint (5.00) and a significant negative activity delta (-33.00), indicating a potentially severe decline in well-being.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "GGGZNWZD",
+        "reason": "High risk hint (5.00) combined with the most negative activity delta (-35.00) and a very significant sleep delta (-47.00), suggesting a substantial decline.",
+        "score_0_to_100": 93
+      },
+      {
+        "id": "IGKMHDGI",
+        "reason": "High risk hint (5.00) and notable negative changes in both activity (-33.00) and sleep (-38.00), indicating a concerning trend.",
+        "score_0_to_100": 90
+      }
+    ],
+    "recommended_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ]
+  },
+  "session_id": "VNBrain2-01KP807RXGTVM79942395GAM16",
+  "status": "success"
+}

@@ -1,0 +1,110 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 5594,
+    "output_tokens": 989,
+    "total_tokens": 6583
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_result": {},
+  "effective_max_output_ids": 2,
+  "extractor_result": {
+    "rationale": {
+      "GGGZNWZD": "High risk_hint (5.00) and large negative activity_delta (-35.00) and sleep_delta (-47.00) indicate a significant decline.",
+      "IGKMHDGI": "High risk_hint (5.00) and substantial negative activity_delta (-33.00) and sleep_delta (-38.00) suggest a concerning trend.",
+      "OKJSZSSW": "Relatively high age (85) combined with a negative sleep_delta (-7.00) and a risk_hint of 1.00 suggests a possible decline in well-being.",
+      "QOHAQRQI": "High risk_hint (5.00) and large negative activity_delta (-33.00) and sleep_delta (-49.00) point to a potential problem."
+    },
+    "selected_ids": [
+      "GGGZNWZD",
+      "IGKMHDGI",
+      "QOHAQRQI",
+      "OKJSZSSW"
+    ]
+  },
+  "final_ids": [
+    "QOHAQRQI",
+    "GGGZNWZD"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 2,
+    "flagged_ratio": 0.13333333333333333,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "50b0a0ded96e14b2415506505b540414549a7c8897a612fbecdf554820f64446",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP80799E76ZQGBWNS3Z0V446"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to temporary fluctuations in activity/sleep",
+      "Missing individuals with gradual declines not captured by delta values",
+      "Over-reliance on risk_hint without considering other factors",
+      "Bias towards certain demographics or locations"
+    ],
+    "guardrails": [
+      "Cross-validate risk_hint with activity and sleep delta values",
+      "Consider the individual's age and location when assessing risk",
+      "Avoid making assumptions based solely on risk_hint",
+      "Ensure fairness and avoid bias in the selection process"
+    ],
+    "planner_confidence_0_to_1": 0.8,
+    "priority_signals": [
+      "High risk_hint values",
+      "Large negative activity_delta",
+      "Large negative sleep_delta",
+      "Age (older individuals may be more vulnerable)"
+    ],
+    "route_recommendation": "full",
+    "strategy": "The LLM will analyze the candidate pool, prioritizing individuals with high risk hints and significant negative changes in activity and sleep patterns. The deterministic features will be used as supporting evidence to identify citizens with potentially declining well-being trajectories. The LLM will focus on identifying individuals whose activity and sleep patterns have worsened significantly, potentially indicating a decline in their overall health and well-being. The final decision will be made by the LLM, considering all available information."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "QOHAQRQI",
+        "reason": "Highest negative sleep_delta (-49.00) combined with a high risk_hint (5.00) and a large negative activity_delta (-33.00) indicates a significant decline in well-being.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "GGGZNWZD",
+        "reason": "High risk_hint (5.00) and large negative activity_delta (-35.00) and sleep_delta (-47.00) indicate a significant decline.",
+        "score_0_to_100": 93
+      },
+      {
+        "id": "IGKMHDGI",
+        "reason": "High risk_hint (5.00) and substantial negative activity_delta (-33.00) and sleep_delta (-38.00) suggest a concerning trend.",
+        "score_0_to_100": 92
+      },
+      {
+        "id": "OKJSZSSW",
+        "reason": "Relatively high age (85) combined with a negative sleep_delta (-7.00) and a risk_hint of 1.00 suggests a possible decline in well-being, but the sleep delta is not as significant as the others.",
+        "score_0_to_100": 65
+      }
+    ],
+    "recommended_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD"
+    ]
+  },
+  "session_id": "VNBrain2-01KP80799E76ZQGBWNS3Z0V446",
+  "status": "success"
+}

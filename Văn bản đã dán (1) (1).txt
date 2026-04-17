@@ -1,0 +1,76 @@
+1) Registrations & team up
+
+AI Agent Challenge là một cuộc thi online theo đội, kéo dài 6 giờ, mở cho người đi làm và học sinh/sinh viên từ 16 tuổi trở lên trên toàn thế giới, miễn là quan tâm tới AI và Multi-Agent Systems. Tất cả mọi người thi cùng một challenge chính, nhưng học sinh/sinh viên còn có thể được tính thêm ở University League hoặc High School League để nhận giải phụ. Replyers cũng được tham gia, nhưng ở leaderboard riêng, và cần theo dõi thông tin nội bộ trên TamTamy.
+
+Việc đăng ký tài khoản trên platform chưa đồng nghĩa với việc đăng ký thi. Muốn thi ngày 16/04/2026, bạn phải tạo đội hoặc tham gia một đội đã tồn tại. Đội phải có từ 2 đến 4 người. Hạn chót đăng ký là 15/04/2026 lúc 23:59 CEST.
+
+Nếu đã đăng ký mà chưa có teammate, bạn có thể tự lập đội, mời người khác, hoặc vào Discord Server để tìm thêm người. Nếu đến lúc đóng đăng ký mà bạn vẫn chưa có đồng đội, ban tổ chức sẽ ghép bạn với đội khác hoặc ghép với một người khác để tạo thành đội hợp lệ. Nếu bạn đang một mình khi hết hạn đăng ký, hệ thống sẽ tự động ghép bạn với một participant khác để tạo thành đội 2 người, và bạn sẽ nhận email thông báo về team assignment.
+
+Để tạo đội, bạn đăng nhập vào Reply Challenges, bấm “Join the challenge”, rồi chọn “Create new team”. Sau đó bạn có thể đặt tên đội và mời bạn bè/bạn học bằng cách nhập email của họ rồi gửi lời mời. Để đăng ký vào challenge, bạn vào challenges.reply.com, chọn AI Agent Challenge, rồi bấm “Join the Challenge”. Để xem đội của mình, bạn vào trang chủ sau khi đăng nhập và bấm “Your Challenge Page”.
+
+Nếu muốn sửa thông tin đăng ký, bạn vào hồ sơ cá nhân và bấm “Edit profile”. Nếu muốn hủy đăng ký challenge, bạn vào Challenge Page rồi bấm “Leave team”. Trang cũng ghi rõ là bạn không thể đổi thành viên đội trước ngày thi, nhưng bạn vẫn có thể rời đội hiện tại. Hệ thống không tự gửi thông báo cho các thành viên còn lại, nên bạn phải tự báo cho họ.
+
+Không được lập đội mixed giữa Replyers và người ngoài, vì có hai challenge riêng và hai leaderboard riêng. Nếu bạn là Replyer, bạn vẫn có thể thi nhưng sẽ ở một cuộc thi riêng dành cho Replyers, thông tin sẽ được công bố nội bộ.
+
+2) Learn & train
+
+Ban tổ chức khuyến nghị rất mạnh rằng đội nên học và luyện trước trong phần Learn & Train. Phần này gồm ba nhóm tài liệu chính: learning modules từ cơ bản đến nâng cao về tạo agent và quản lý tài nguyên; tutorial/instructions cho các công cụ được dùng trong cuộc thi; và các sandbox problems để luyện tập, bắt đầu từ 26/02/2026.
+
+Về ngôn ngữ lập trình, bạn có thể dùng bất kỳ ngôn ngữ nào mà đội cảm thấy thoải mái để xây hệ thống agentic. Trang nói Python và JavaScript/TypeScript là các lựa chọn phổ biến, nhưng không bắt buộc. Điều kiện là code của bạn phải chạy được và nộp đúng theo quy định.
+
+Langfuse trong phần Learn & Train được mô tả là công cụ dùng cho tracking và validation, không dùng trực tiếp để tính điểm. Điểm của đội được tính chỉ từ output files nộp lên, không dựa trên dữ liệu tracking của Langfuse. Tuy nhiên, Langfuse session ID là bắt buộc và phải được đưa vào mọi submission theo đúng hướng dẫn.
+
+Ở sandbox mode, bạn luyện cách nộp bài giống như trong challenge thật. Bạn upload file bằng drag-and-drop hoặc chọn file từ máy tính. Với training dataset, bạn nộp một output file cho mỗi dataset. Với evaluation dataset, bạn phải nộp output file và source code. Source code phải là file zip chứa toàn bộ agentic system, gồm code, dependency list, config files, instructions và các thành phần cần thiết khác để chạy được. Submission trong sandbox cũng phải có Langfuse session ID.
+
+Khi nộp trong sandbox mode, bạn có thấy điểm: hệ thống hiển thị danh sách điểm số của tất cả các lần nộp. Tuy nhiên, khu training không có leaderboard riêng; bạn chỉ xem được điểm của chính các submission của mình.
+
+3) Platform & technical stuff
+
+Về công cụ, đội được tự do chọn tools, libraries, frameworks theo cách làm của mình. Nhưng trong competition có hai yêu cầu bắt buộc: dùng LLMs via API với API key do ban tổ chức cấp, và phải tích hợp Langfuse để tracking theo hướng dẫn trong Learn & Train. Ngoài ra, bạn có thể dùng thêm bất kỳ thư viện hay framework nào khác để xây hệ thống agentic.
+
+Nếu platform gặp lỗi, thứ tự xử lý được khuyến nghị là: reload trang, sau đó clear cache và cookies. Nếu vẫn lỗi thì liên hệ Reply AIvengers qua chat hoặc email challenges@reply.com
+. Về yêu cầu kỹ thuật tối thiểu, bạn chỉ cần máy tính riêng và kết nối Internet.
+
+Trang cũng nói rõ rằng platform không chạy source code của bạn để chấm điểm. Việc tính điểm dựa chỉ trên output files. Tuy vậy, AIvengers team vẫn phải có khả năng chạy được source code bạn nộp để xác minh submission là hợp lệ và đúng quy định. Điều này có nghĩa là dù việc chấm không thực thi code của bạn, code vẫn phải đầy đủ và chạy được.
+
+4) The challenge
+
+Challenge là một cuộc thi 6 giờ trong đó đội của bạn phải xây một agentic system để giải một problem statement cụ thể. Theo timeline ngày 16/04/2026, challenge bắt đầu lúc 15:30 CEST, leaderboard freeze từ 21:00 đến 21:30 CEST, challenge kết thúc lúc 21:30 CEST, và podium validation/final results được xác nhận trong vòng 10 ngày làm việc sau đó.
+
+Trong challenge page, đội sẽ được truy cập hai loại dataset. Thứ nhất là Training Dataset: dùng để phát triển và tinh chỉnh hệ thống; được nộp output nhiều lần tùy ý; và có thể xem điểm sau mỗi lần nộp để theo dõi tiến triển. Thứ hai là Evaluation Dataset: chỉ được nộp một lần duy nhất; phải nộp cả output lẫn source code zip; và điểm cuối cùng chỉ dựa trên hiệu năng ở evaluation dataset.
+
+Cơ chế mở khóa dataset diễn ra theo từng giai đoạn. Khi challenge bắt đầu, đội chỉ có quyền truy cập 3 dataset đầu tiên. Sau khi đội nộp final evaluation solution cho 3 dataset này, dataset 4 và 5 mới được tự động mở khóa.
+
+Ban tổ chức cấp cho đội các tài nguyên sau: problem statement, API key để truy cập LLM, training và evaluation datasets, token monitoring dashboard, và tracing dashboard chứa dữ liệu Langfuse của cả đội. Ngoài ra còn có token budget chia làm 2 giai đoạn: $40 token cho datasets 1–3, và $120 token cho datasets 4–5, trong đó phần $120 chỉ được mở khóa sau khi đã nộp evaluation solutions cho datasets 1–3.
+
+Trang nhấn mạnh rằng token management là một phần chiến lược của cuộc thi. Khi dùng hết ngân sách token được cấp thì không được nạp thêm. Vì vậy đội phải cân đối rất kỹ giữa thử nghiệm, chi phí LLM, và số lần chạy hệ thống. Nếu có câu hỏi về problem statement, đội có thể liên hệ AI-vengers team qua chat trên Discord.
+
+Đội được tự do chọn development environment và execution environment. Hai yêu cầu cứng vẫn là: phải có Langfuse session ID để tracking, và final submission của evaluation dataset phải gồm cả output lẫn source code zip. Competition là online-only, nhưng người tham gia có thể tự tổ chức local hubs ở trường, công ty hoặc nơi khác để cùng thi; ở một số nơi, Reply có thể hỗ trợ official hubs bằng quà hoặc đồ ăn nhẹ.
+
+Leaderboard sẽ được cập nhật thường xuyên trong thời gian challenge diễn ra để phản ánh hiệu suất các đội. Nó sẽ bị freeze 30 phút trước deadline, nhưng hệ thống vẫn tiếp tục cập nhật điểm ở hậu trường.
+
+5) Submissions & scoring
+
+Về cách upload solution, bạn nộp file bằng drag-and-drop hoặc chọn file từ máy tính. Với training dataset, bạn nộp output file cho từng dataset và có thể làm điều đó nhiều lần. Với evaluation dataset, bạn phải nộp cả output file và source code. Mọi submission đều phải kèm Langfuse session ID để đảm bảo tracking đúng luật thi.
+
+Số lần nộp phụ thuộc vào loại dataset. Training dataset cho phép unlimited submissions, để bạn thử nghiệm, tinh chỉnh hệ thống và theo dõi tiến triển. Evaluation dataset chỉ có one submission only. Vì vậy đội cần test kỹ và kiểm tra đầy đủ trước khi gửi. Điểm cuối cùng chỉ dựa trên evaluation dataset submission.
+
+Theo mô tả chi tiết hơn ở phần scoring, hệ thống chấm dựa trên nhiều nhóm tiêu chí có trọng số. Detection Quality gồm hai góc nhìn: count-based accuracy, tức khả năng nhận diện đúng các giao dịch gian lận nếu coi mọi giao dịch có trọng số như nhau; và economic accuracy, tức khả năng thu hồi/phát hiện đúng giá trị gian lận về mặt tiền tệ, trong đó bắt được một gian lận 50,000 euro có ý nghĩa hơn nhiều so với một gian lận 5 euro.
+
+Ngoài ra còn có nhóm System Performance, gồm cost của việc dùng LLM, latency của hệ thống, và agent architecture quality của multi-agent system. Trang cũng nói mọi metric sẽ được so với một optimal benchmark solution; lời giải nào vượt benchmark sẽ được cộng thêm credit. Đồng thời, mỗi dataset có weighted scoring riêng theo độ khó, nên dataset phức tạp hơn sẽ cho mức điểm tối đa cao hơn.
+
+Một submission có thể bị reject nếu mắc các lỗi như: thiếu output files, thiếu source code đối với evaluation dataset, thiếu Langfuse session ID, zip file bị hỏng, hoặc hệ thống không đầy đủ như thiếu dependencies, config files hay instructions. Trang nhấn mạnh phải kiểm tra thật kỹ, nhất là với evaluation dataset vì bạn chỉ có một cơ hội.
+
+Về thành phần, một submission gồm ba phần: Langfuse Session ID nhập vào trường trong upload modal, output file dạng .txt chứa danh sách giao dịch gian lận đúng format problem statement, và source code chỉ bắt buộc với evaluation datasets, ở dạng .zip chứa toàn bộ agentic system.
+
+Về cách Langfuse hoạt động, trang mô tả rằng nó tự theo dõi token usage, cost, và latency. Đội cần thiết lập các biến môi trường LANGFUSE_PUBLIC_KEY, LANGFUSE_SECRET_KEY, LANGFUSE_HOST, dùng @observe() và CallbackHandler() trong code, và tạo session ID duy nhất cho mỗi lần chạy. Điểm quan trọng là Langfuse vẫn chỉ phục vụ tracking/validation, không trực tiếp quyết định điểm số.
+
+Phần rules cũng nói rõ LLM phải đóng vai trò trung tâm trong hệ thống. Cách làm được chấp nhận là để LLM orchestrate và coordinate toàn bộ hệ thống, quyết định gọi tool nào, khi nào gọi, diễn giải kết quả và điều chỉnh hành vi động. Các deterministic tools, heuristics và data manipulation functions vẫn được dùng, nhưng phải do LLM quản lý và điều phối.
+
+Cách làm không được chấp nhận là một hệ thống chủ yếu rule-based/deterministic mà chỉ dùng LLM ở mức tối thiểu hoặc hời hợt; hoặc hệ thống dùng LLM chỉ cho các tác vụ vụn vặt như formatting. Tóm lại, bạn được phép tối ưu hiệu năng và chi phí bằng công cụ phụ trợ, nhưng LLM phải là bộ não ra quyết định và điều phối logic chính của agentic system.
+
+6) Tóm tắt ngắn để nắm toàn bộ luật chơi
+
+Muốn thi, bạn phải có đội 2–4 người trước hạn 15/04/2026 23:59 CEST. Trước ngày thi, đội nên học trong Learn & Train, nhất là phần sandbox và Langfuse. Khi thi thật, đội làm trong 6 giờ, ban đầu có 3 dataset, sau đó mở tiếp dataset 4–5 khi đã nộp evaluation cho 3 dataset đầu. Đội được cấp API key, datasets, dashboard, và token budget hai giai đoạn; nếu dùng hết token thì không được nạp thêm. Training được nộp không giới hạn, evaluation chỉ được nộp một lần. Điểm cuối cùng dựa trên chất lượng phát hiện gian lận cộng với hiệu năng hệ thống, trong khi Langfuse chỉ để tracking/validation. Code không bị platform dùng để chấm trực tiếp, nhưng vẫn phải đầy đủ và chạy được để ban tổ chức xác minh.
+
+Tôi có thể làm tiếp cho bạn một bản checklist nộp bài 1 trang hoặc bản tóm tắt siêu ngắn để gửi cho teammate.

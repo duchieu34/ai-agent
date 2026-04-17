@@ -1,0 +1,108 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 3884,
+    "output_tokens": 817,
+    "total_tokens": 4701
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_result": {},
+  "dominant_single_cap_applied": true,
+  "effective_max_output_ids": 1,
+  "extractor_result": {
+    "rationale": {
+      "WNACROYX": "This citizen exhibits a strong negative slope in both activity and sleep, coupled with a significant increase in environmental exposure. They also show multiple consecutive declines in activity and sleep, indicating a clear deteriorating well-being trajectory."
+    },
+    "selected_ids": [
+      "WNACROYX"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 1,
+    "flagged_ratio": 0.2,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "af346cc8b4318c21bf24743f8b946e501c08b826579d4b0e5be0129ce6f6a89e",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP85JX4AZ43K0X3XHPGYMPRV"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Ignoring short-term fluctuations and focusing only on long-term trends.",
+      "Over-reliance on a single indicator, missing combined negative signals.",
+      "Misinterpreting low absolute values as a declining trajectory.",
+      "Failing to account for potential external factors influencing trajectories (though not directly measurable in provided features)."
+    ],
+    "guardrails": [
+      "Ensure that 'suboptimal' is defined by a declining trend, not just low absolute values.",
+      "Cross-reference multiple indicators to confirm a trajectory.",
+      "Consider the magnitude and consistency of declines.",
+      "Be cautious of noisy data that might suggest false trends."
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "activity_slope < 0",
+      "sleep_slope < 0",
+      "activity_consec_declines > 1",
+      "sleep_consec_declines > 1",
+      "exposure_slope > 0"
+    ],
+    "route_recommendation": "full",
+    "strategy": "Identify citizens with suboptimal well-being trajectories by analyzing trends in activity and sleep, looking for consecutive declines and increasing environmental exposure. Prioritize individuals exhibiting multiple declining indicators simultaneously."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "Strong negative slopes in both activity and sleep, multiple consecutive declines in activity and sleep, and increasing environmental exposure align with the planner's strategy for identifying suboptimal well-being trajectories.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "DCGGXUWF",
+        "reason": "While there are consecutive declines in sleep and a negative slope for activity, the overall deltas and slopes are less pronounced than WNACROYX. The increase in exposure is minimal.",
+        "score_0_to_100": 30
+      },
+      {
+        "id": "IXTDRHTR",
+        "reason": "This ID shows a negative slope for activity and consecutive declines in activity and sleep, but the sleep slope is positive and the overall trends are weak.",
+        "score_0_to_100": 15
+      },
+      {
+        "id": "IAFGUHCK",
+        "reason": "This ID has consecutive declines in activity and sleep, but the slopes for activity and exposure are negative, while sleep and exposure slopes are positive. The overall trend is not clearly suboptimal.",
+        "score_0_to_100": 10
+      },
+      {
+        "id": "RFLFWVQA",
+        "reason": "This ID shows consecutive declines in activity and sleep, and a negative sleep slope, but the activity slope is positive and the overall trends are weak.",
+        "score_0_to_100": 5
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX"
+    ]
+  },
+  "session_id": "VNBrain2-01KP85JX4AZ43K0X3XHPGYMPRV",
+  "status": "success"
+}

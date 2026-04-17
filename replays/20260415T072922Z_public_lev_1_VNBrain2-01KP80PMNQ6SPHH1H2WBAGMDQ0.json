@@ -1,0 +1,106 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 2596,
+    "output_tokens": 807,
+    "total_tokens": 3403
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_result": {},
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "DCGGXUWF": "Very advanced age, slight risk hint, and a decrease in activity, which, combined with age, raises concerns.",
+      "IXTDRHTR": "Advanced age, moderate risk hint, and a notable decrease in activity, indicating a potential concern.",
+      "WNACROYX": "High risk hint, significant negative changes in both activity and sleep, suggesting a decline in well-being."
+    },
+    "selected_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX",
+    "IXTDRHTR",
+    "DCGGXUWF"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 3,
+    "flagged_ratio": 0.6,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "0b782e93f5e229e4894260cb5438c1a5b102f56c0e498ca3db2883b332f1b7eb",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP80PMNQ6SPHH1H2WBAGMDQ0"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to focusing solely on risk hints without considering other factors.",
+      "False negatives due to overlooking subtle but significant changes in activity and sleep patterns.",
+      "Bias towards older individuals, potentially missing younger individuals with declining well-being.",
+      "Inaccurate assessment due to noisy or incomplete feature data."
+    ],
+    "guardrails": [
+      "Ensure a balanced consideration of all priority signals, not relying solely on any single factor.",
+      "Implement a threshold for activity and sleep delta to identify significant changes.",
+      "Consider age as a contributing factor but avoid disproportionately prioritizing older individuals.",
+      "Validate feature data for accuracy and completeness."
+    ],
+    "planner_confidence_0_to_1": 0.8,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta",
+      "age"
+    ],
+    "route_recommendation": "full",
+    "strategy": "The LLM will analyze the candidate pool, prioritizing individuals with high risk hints, significant negative changes in activity and sleep patterns, and advanced age. The LLM will then synthesize these factors to identify citizens with potentially suboptimal well-being trajectories. Deterministic features serve as supporting evidence for the LLM's decision-making process."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "High risk hint (5.00), significant negative changes in activity (-36.00) and sleep (-38.00), suggesting a substantial decline in well-being. Age 35 is a slight mitigating factor, but the severity of the activity and sleep changes outweighs this.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "IXTDRHTR",
+        "reason": "Advanced age (90), moderate risk hint (2.50), and a notable decrease in activity (-8.00) indicate a potential concern. Sleep delta is slightly positive, which is a minor mitigating factor.",
+        "score_0_to_100": 80
+      },
+      {
+        "id": "DCGGXUWF",
+        "reason": "Very advanced age (95), slight risk hint (1.00), and a decrease in activity (-5.00) raise concerns, especially considering the age. Sleep delta is slightly positive, which is a minor mitigating factor.",
+        "score_0_to_100": 75
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ]
+  },
+  "session_id": "VNBrain2-01KP80PMNQ6SPHH1H2WBAGMDQ0",
+  "status": "success"
+}

@@ -1,0 +1,67 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 1282,
+    "output_tokens": 255,
+    "total_tokens": 1537
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "fast",
+  "critic_ran": false,
+  "critic_result": {},
+  "dataset_key": "public_lev_1",
+  "decider_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.85,
+    "final_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ],
+    "reason": "Selected IDs based on highest risk hints and negative activity trends."
+  },
+  "effective_max_output_ids": 3,
+  "extractor_result": {},
+  "final_ids": [
+    "WNACROYX",
+    "IXTDRHTR",
+    "DCGGXUWF"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 3,
+    "flagged_ratio": 0.6,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "0b782e93f5e229e4894260cb5438c1a5b102f56c0e498ca3db2883b332f1b7eb",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP81T6MQC0JG4MMRK2A431F0"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Overlooking citizens with lower risk hints but significant negative trends.",
+      "Misinterpreting activity and sleep data due to external factors.",
+      "Insufficient budget leading to inadequate candidate evaluation."
+    ],
+    "guardrails": [
+      "Ensure that the highest risk hints are prioritized.",
+      "Cross-validate activity and sleep metrics with external health indicators.",
+      "Limit candidate selection to the top 5 based on defined criteria."
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Identify citizens with suboptimal well-being trajectories based on risk hints and activity metrics. Prioritize those with the highest risk hints and negative activity trends."
+  },
+  "scorer_result": {},
+  "session_id": "VNBrain2-01KP81T6MQC0JG4MMRK2A431F0",
+  "status": "success"
+}

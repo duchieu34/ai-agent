@@ -1,0 +1,103 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 2588,
+    "output_tokens": 789,
+    "total_tokens": 3377
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_result": {},
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "DCGGXUWF": "Low risk hint (1.00) but a very advanced age (95) and a decrease in activity (-5.00) suggest further investigation may be warranted.",
+      "IXTDRHTR": "Moderate risk hint (2.50) and a notable decrease in activity (-8.00) indicate a potential issue, especially considering the individual's advanced age (90).",
+      "WNACROYX": "High risk hint (5.00) and significant negative changes in both activity (-36.00) and sleep (-38.00) suggest a concerning well-being trajectory."
+    },
+    "selected_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX",
+    "IXTDRHTR",
+    "DCGGXUWF"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 3,
+    "flagged_ratio": 0.6,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "0b782e93f5e229e4894260cb5438c1a5b102f56c0e498ca3db2883b332f1b7eb",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP7YRPMHEY5GK54REENM9QHM"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False negatives due to overlooking subtle patterns in the data.",
+      "False positives due to overemphasizing risk hints without considering other factors.",
+      "Bias towards certain age groups or cities."
+    ],
+    "guardrails": [
+      "Ensure that the LLM considers all available features and avoids relying solely on risk hints.",
+      "Implement a mechanism to detect and mitigate potential biases in the LLM's decision-making process.",
+      "Regularly evaluate the LLM's performance and adjust the strategy as needed."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "The LLM will analyze the candidate pool, prioritizing individuals with high risk hints and significant negative changes in activity and sleep patterns. Age and city will be considered as secondary factors. The LLM will then rank the candidates based on a holistic assessment of these factors to identify those with potentially suboptimal well-being trajectories."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "High risk hint (5.00) combined with significant negative changes in both activity (-36.00) and sleep (-38.00) indicates a high probability of suboptimal well-being.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "IXTDRHTR",
+        "reason": "Moderate risk hint (2.50) and a notable decrease in activity (-8.00), coupled with advanced age (90), suggest a considerable risk of declining well-being.",
+        "score_0_to_100": 75
+      },
+      {
+        "id": "DCGGXUWF",
+        "reason": "Low risk hint (1.00), but very advanced age (95) and a decrease in activity (-5.00) warrant further investigation, indicating a moderate risk.",
+        "score_0_to_100": 60
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ]
+  },
+  "session_id": "VNBrain2-01KP7YRPMHEY5GK54REENM9QHM",
+  "status": "success"
+}

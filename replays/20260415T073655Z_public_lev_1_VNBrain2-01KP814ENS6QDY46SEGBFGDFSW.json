@@ -1,0 +1,108 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 2704,
+    "output_tokens": 866,
+    "total_tokens": 3570
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_result": {},
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "DCGGXUWF": "Very advanced age with a decrease in activity, making them a higher priority.",
+      "IAFGUHCK": "Advanced age and a large positive sleep delta, which could be indicative of a change in health status.",
+      "IXTDRHTR": "Advanced age, moderate risk hint, and a notable decrease in activity, indicating potential health concerns.",
+      "WNACROYX": "High risk hint, significant negative changes in both activity and sleep, suggesting a rapid decline in well-being."
+    },
+    "selected_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF",
+      "IAFGUHCK"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX",
+    "IXTDRHTR",
+    "DCGGXUWF"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 3,
+    "flagged_ratio": 0.6,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "0b782e93f5e229e4894260cb5438c1a5b102f56c0e498ca3db2883b332f1b7eb",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP814ENS6QDY46SEGBFGDFSW"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Over-reliance on a single feature (e.g., risk_hint) without considering other factors.",
+      "Ignoring the interplay between different features (e.g., a small activity_delta might be significant for an elderly individual).",
+      "Misinterpreting the direction of change (e.g., assuming a positive sleep_delta is always good).",
+      "Failing to account for the context of the city or location."
+    ],
+    "guardrails": [
+      "Ensure that the LLM considers all priority signals and their interactions.",
+      "Verify that the LLM correctly interprets the direction and magnitude of changes in activity and sleep patterns.",
+      "Check for any biases in the LLM's assessment based on age or location.",
+      "Confirm that the LLM's final decision aligns with the overall goal of identifying individuals with suboptimal well-being trajectories."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta",
+      "age"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "The LLM will analyze the candidate pool, prioritizing individuals with high risk hints, significant negative changes in activity and sleep patterns, and advanced age. The LLM will then synthesize these factors to determine the individuals with the most concerning well-being trajectories. Deterministic features serve as supporting evidence."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "High risk hint (5.00), significant negative changes in both activity (-36.00) and sleep (-38.00) indicate a rapid decline in well-being. Relatively younger age (35) makes the decline more concerning.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "IXTDRHTR",
+        "reason": "Advanced age (90), moderate risk hint (2.50), and a notable decrease in activity (-8.00) suggest potential health concerns. The age amplifies the significance of the activity decline.",
+        "score_0_to_100": 85
+      },
+      {
+        "id": "DCGGXUWF",
+        "reason": "Very advanced age (95) with a decrease in activity (-5.00) makes them a higher priority. While the activity delta is smaller than IXTDRHTR, the higher age increases the risk.",
+        "score_0_to_100": 75
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ]
+  },
+  "session_id": "VNBrain2-01KP814ENS6QDY46SEGBFGDFSW",
+  "status": "success"
+}

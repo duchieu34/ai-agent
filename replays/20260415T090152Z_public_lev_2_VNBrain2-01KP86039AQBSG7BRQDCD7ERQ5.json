@@ -1,0 +1,110 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 8858,
+    "output_tokens": 888,
+    "total_tokens": 9746
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_result": {},
+  "effective_max_output_ids": 9,
+  "extractor_result": {
+    "rationale": {
+      "GGGZNWZD": "Very strong negative slopes in activity and sleep, with a positive slope in exposure and multiple consecutive activity declines.",
+      "IGKMHDGI": "Significant negative slopes in activity and sleep, alongside a positive slope in exposure and multiple consecutive declines in both metrics.",
+      "QOHAQRQI": "Strong negative slopes in both activity and sleep, coupled with a positive slope in exposure and a high number of consecutive activity declines."
+    },
+    "selected_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ]
+  },
+  "final_ids": [
+    "GGGZNWZD",
+    "QOHAQRQI",
+    "IGKMHDGI"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 3,
+    "flagged_ratio": 0.2,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "dee6f67b04b1d84fe6fb216e22b482d7c0a865397181c7a1e88e6045d80e9351",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP86039AQBSG7BRQDCD7ERQ5"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Individuals with fluctuating but not consistently declining trajectories.",
+      "Individuals with low absolute values but no clear downward trend.",
+      "High environmental exposure without corresponding declines in activity or sleep.",
+      "Insufficient data points to establish a reliable trend.",
+      "False positives due to short-term dips not indicative of a long-term decline."
+    ],
+    "guardrails": [
+      "Ensure at least two primary indicators (activity, sleep) show a negative trend for a strong signal.",
+      "Prioritize candidates with higher 'risk_hint' scores when other indicators are ambiguous.",
+      "Avoid flagging individuals with positive or flat slopes across all key metrics.",
+      "Consider age as a secondary factor, but do not let it override clear trajectory data.",
+      "The 'CandidateTopK=15' budget must be respected."
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "activity_slope < 0",
+      "sleep_slope < 0",
+      "exposure_slope > 0",
+      "activity_consec_declines > 2",
+      "sleep_consec_declines > 2",
+      "activity_delta < 0 and sleep_delta < 0"
+    ],
+    "route_recommendation": "full",
+    "strategy": "Identify citizens with suboptimal well-being trajectories by prioritizing those exhibiting clear declining trends in activity and sleep, coupled with increasing environmental exposure. Focus on individuals with multiple consecutive declines and strong negative slopes across key metrics. Cross-validation of these indicators will be crucial for high-confidence identification."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "GGGZNWZD",
+        "reason": "Strong negative slopes in activity (-3.258) and sleep (-4.247), positive slope in exposure (3.275), and multiple consecutive activity declines (5). This aligns perfectly with the strategy's focus on declining trends and increasing environmental exposure.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "QOHAQRQI",
+        "reason": "Strong negative slopes in activity (-2.974) and sleep (-2.879), positive slope in exposure (3.358), and a high number of consecutive activity declines (8). This ID exhibits multiple strong indicators of a suboptimal trajectory.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "IGKMHDGI",
+        "reason": "Significant negative slopes in activity (-3.055) and sleep (-2.819), a positive slope in exposure (3.626), and multiple consecutive declines in both metrics (3 each). This ID shows a clear downward trend across key indicators.",
+        "score_0_to_100": 85
+      }
+    ],
+    "recommended_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI"
+    ]
+  },
+  "session_id": "VNBrain2-01KP86039AQBSG7BRQDCD7ERQ5",
+  "status": "success"
+}

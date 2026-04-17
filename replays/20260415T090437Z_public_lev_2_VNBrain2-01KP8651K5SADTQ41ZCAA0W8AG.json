@@ -1,0 +1,107 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 8724,
+    "output_tokens": 727,
+    "total_tokens": 9451
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_result": {},
+  "effective_max_output_ids": 9,
+  "extractor_result": {
+    "rationale": {
+      "GGGZNWZD": "Significant negative slopes in activity and sleep, with consecutive declines. Rising exposure.",
+      "IGKMHDGI": "Negative slopes in activity and sleep, with consecutive declines in both. Rising exposure.",
+      "QOHAQRQI": "Strong negative slopes in both activity and sleep, with multiple consecutive declines in activity. Rising exposure also present."
+    },
+    "selected_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ]
+  },
+  "final_ids": [
+    "GGGZNWZD",
+    "QOHAQRQI",
+    "IGKMHDGI"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 3,
+    "flagged_ratio": 0.2,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "dee6f67b04b1d84fe6fb216e22b482d7c0a865397181c7a1e88e6045d80e9351",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP8651K5SADTQ41ZCAA0W8AG"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Missing subtle declines due to noise in the data.",
+      "Incorrectly flagging individuals with temporary dips in well-being.",
+      "Over-relying on single indicators without considering the overall pattern.",
+      "Ignoring the magnitude of the changes (e.g., small slopes may not be significant)."
+    ],
+    "guardrails": [
+      "Prioritize individuals with the most pronounced negative slopes and consecutive declines.",
+      "Consider the magnitude of the delta values (larger changes are more concerning).",
+      "Cross-validate findings across multiple indicators before flagging.",
+      "Avoid flagging based on a single data point or a very short trend.",
+      "If exposure is rising, confirm with other indicators before flagging."
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "Negative slope in both activity and sleep indices.",
+      "Consecutive declines in activity and/or sleep.",
+      "Rising environmental exposure (positive slope).",
+      "Cross-indicator patterns: multiple metrics declining together."
+    ],
+    "route_recommendation": "full",
+    "strategy": "Prioritize citizens exhibiting declining trends in both activity and sleep indices, coupled with rising environmental exposure. Look for consecutive declines in activity/sleep as strong indicators. Consider age as a secondary factor, but the primary focus is on trajectory patterns."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "GGGZNWZD",
+        "reason": "Strongest evidence: Significant negative slopes in both activity and sleep, with consecutive declines in both. Rising exposure further supports the negative trajectory.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "QOHAQRQI",
+        "reason": "Strong evidence: Negative slopes in both activity and sleep, multiple consecutive declines in activity, and rising exposure. High risk hint.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "IGKMHDGI",
+        "reason": "Moderate evidence: Negative slopes in activity and sleep, consecutive declines in both, and rising exposure. High risk hint.",
+        "score_0_to_100": 85
+      }
+    ],
+    "recommended_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI",
+      "IGKMHDGI"
+    ]
+  },
+  "session_id": "VNBrain2-01KP8651K5SADTQ41ZCAA0W8AG",
+  "status": "success"
+}

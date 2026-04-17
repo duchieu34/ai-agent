@@ -1,0 +1,103 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 2493,
+    "output_tokens": 704,
+    "total_tokens": 3197
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_result": {},
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "DCGGXUWF": "Low risk hint, negative activity delta, and very advanced age.",
+      "IXTDRHTR": "Moderate risk hint, negative activity delta, and advanced age.",
+      "WNACROYX": "High risk hint, significant negative changes in both activity and sleep."
+    },
+    "selected_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX",
+    "IXTDRHTR",
+    "DCGGXUWF"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 3,
+    "flagged_ratio": 0.6,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "0b782e93f5e229e4894260cb5438c1a5b102f56c0e498ca3db2883b332f1b7eb",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP7YYVYWM67E5E9X42XJM929"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to noisy data in activity and sleep patterns.",
+      "Missing individuals with subtle but consistent declines in well-being.",
+      "Over-reliance on risk_hint without considering other factors."
+    ],
+    "guardrails": [
+      "Ensure activity_delta and sleep_delta are negative and significant before flagging an individual.",
+      "Cross-validate risk_hint with other indicators of well-being decline.",
+      "Consider age as a factor, as older individuals may naturally have lower activity levels."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "The LLM will analyze the candidate pool, prioritizing individuals with high risk hints and significant negative changes in activity and sleep patterns. Age and city will be considered as secondary factors. The LLM will then make a final determination based on a holistic view of the available information."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.85,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "High risk hint (5.00), significant negative changes in both activity (-36.00) and sleep (-38.00), indicating a strong decline in well-being.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "IXTDRHTR",
+        "reason": "Moderate risk hint (2.50), negative activity delta (-8.00), and advanced age (90) suggest a potential concern, although sleep delta is slightly positive.",
+        "score_0_to_100": 70
+      },
+      {
+        "id": "DCGGXUWF",
+        "reason": "Low risk hint (1.00), negative activity delta (-5.00), and very advanced age (95) raise some concern, but the sleep delta is slightly positive, reducing the overall risk.",
+        "score_0_to_100": 60
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX",
+      "IXTDRHTR",
+      "DCGGXUWF"
+    ]
+  },
+  "session_id": "VNBrain2-01KP7YYVYWM67E5E9X42XJM929",
+  "status": "success"
+}

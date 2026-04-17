@@ -1,0 +1,26 @@
+{
+  "budget_profile": "high",
+  "candidate_pool_size": 522,
+  "candidate_pool_size_after_prune": 522,
+  "candidate_pool_size_before_prune": 522,
+  "chain_path": "full",
+  "critic_result": {},
+  "dataset_key": "lev2_model_upgrade",
+  "decider_result": {},
+  "decision_profile": "balanced",
+  "effective_max_output_ids": 365,
+  "error": "Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 2200 tokens, but can only afford 1066. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_3CNPdZKjJCWxkNuM4BukoD7HbZf'}",
+  "extractor_result": {},
+  "mode": "challenge",
+  "phase": "training",
+  "planner_result": {},
+  "risk_elbow_cap": {
+    "applied": false,
+    "cap": null,
+    "eligible": false,
+    "reason": "not_checked"
+  },
+  "scorer_result": {},
+  "session_id": "VNBrain2-01KPBBMGWBGAYN83R3FCBDRCAB",
+  "status": "error"
+}

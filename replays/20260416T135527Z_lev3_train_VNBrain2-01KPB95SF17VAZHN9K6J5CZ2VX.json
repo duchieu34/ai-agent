@@ -1,0 +1,225 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 17393,
+    "output_tokens": 3940,
+    "total_tokens": 21333
+  },
+  "budget_profile": "low",
+  "candidate_pool_ids_after_prune": [
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+    "4e5f0e1f-35db-4c84-a626-132b87512675",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+    "1f73a7a1-46e5-409b-ab78-80382250a959",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda",
+    "2fb2222c-f3fa-451a-8dc8-97cab8e7543e",
+    "e0c4fcae-4141-4104-8860-eb1809a4a443",
+    "3137f295-438f-4acb-ad85-725e4f8024ce",
+    "2f65a6b7-7fad-4b9a-b4b9-586a8cec6aa9",
+    "2bab08fb-4903-439f-9d24-5c11689b2f9f",
+    "eb50e2c7-21c7-4e8d-8791-72e85e6a4979",
+    "ef326a98-94da-426b-aad9-4535e5501298",
+    "e8a67450-2c08-466b-8858-c5b72164d706",
+    "b6d0c2c7-688d-4d85-89d9-08655f9662e1",
+    "522e8649-c3d4-4139-ae2e-d1e6f6d70043",
+    "fa283969-1faf-4cca-806f-2818c32906a0",
+    "587d0d03-7bae-4b95-bf99-4a1e3ec9a4df",
+    "0e1e7692-1424-457b-995e-fa22c85ce92a",
+    "0ddb44e7-1374-47ac-b97d-448235328e46",
+    "da6396b3-727d-4058-bfce-826366ff094a",
+    "797df8c6-4869-4ed4-8568-47913b507d82",
+    "b718358e-e74e-4e80-9f89-30d711831ab3",
+    "35071198-4672-4ad4-a627-68ba8a027032",
+    "eb189b28-35ff-4721-8371-88784db669f8",
+    "3413ac97-5b1e-4d5c-aa82-0b789fb1005d",
+    "100b56ae-028c-41ba-a851-50847e52c3dd",
+    "92dec191-abeb-4d2c-98d2-597fa96930be",
+    "0496e5c2-8c1d-439b-b8ca-faa8acef6bbb",
+    "1c379f31-3af2-4f17-9f22-cfea5e907c52",
+    "fc59e9a2-639a-434d-aab1-aa580dce3adc",
+    "ef5a00b8-ebd4-4a11-80be-a4fb1ed6bc6d",
+    "6d04ebf1-7293-4326-9156-7ea57c571b30",
+    "492a746f-5fe2-448f-9de9-db21e2de2384",
+    "1d55b8a3-5ae0-4e4f-8698-06758268c327",
+    "2f30675c-45e5-48fe-9e04-b042fd487679",
+    "90223607-0971-4227-8966-54da453026dc",
+    "102f511e-6d04-4bc9-9811-4468f7fa12df"
+  ],
+  "candidate_pool_size": 40,
+  "candidate_pool_size_after_prune": 40,
+  "candidate_pool_size_before_prune": 300,
+  "cap_applied": false,
+  "chain_path": "full-with-critic",
+  "contradiction_signals": [],
+  "critic_ran": true,
+  "critic_result": {
+    "critic_notes": "",
+    "final_ids": [],
+    "rejected_ids": []
+  },
+  "dataset_key": "lev3_train",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 24,
+  "extractor_result": {
+    "rationale": {},
+    "selected_ids": []
+  },
+  "final_ids": [
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+    "4e5f0e1f-35db-4c84-a626-132b87512675",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+    "1f73a7a1-46e5-409b-ab78-80382250a959",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda"
+  ],
+  "finalize_debug": {
+    "anchor_source": "",
+    "cap_applied": false,
+    "cap_is_hard_final": true,
+    "cap_limit": 24,
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": false,
+      "scorer_confidence_0_to_1": 0.5
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [],
+    "fallback_applied": true,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9": "fallback",
+      "1f73a7a1-46e5-409b-ab78-80382250a959": "fallback",
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e": "fallback",
+      "4e5f0e1f-35db-4c84-a626-132b87512675": "fallback",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752": "fallback",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416": "fallback",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146": "fallback",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda": "fallback"
+    },
+    "id_kept_supporting_sources": {
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9": [],
+      "1f73a7a1-46e5-409b-ab78-80382250a959": [],
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e": [],
+      "4e5f0e1f-35db-4c84-a626-132b87512675": [],
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752": [],
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416": [],
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146": [],
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda": []
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.2,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "critic",
+        "scorer",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+      "4e5f0e1f-35db-4c84-a626-132b87512675",
+      "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+      "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+      "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+      "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+      "1f73a7a1-46e5-409b-ab78-80382250a959",
+      "bb779be1-7cdc-4127-8c4c-12b01255ceda"
+    ],
+    "pre_finalize_ids": [],
+    "source_ids": {
+      "critic": [],
+      "decider": [],
+      "extractor": [],
+      "scorer": []
+    },
+    "source_votes": {}
+  },
+  "firewall_report": {
+    "dataset_key": "lev3_train",
+    "flagged_count": 8,
+    "flagged_ratio": 0.2,
+    "input_sha256": "fa036c1f025ab6cadad26c2ac4970edbab0c4723a2eb30172edd5eca9ffb339b",
+    "mode": "challenge",
+    "output_sha256": "c22b712a7d191f628457dc758fe0bbd074ef0b465fa2dab82e497d115c32b694",
+    "phase": "training",
+    "population_count": 40,
+    "session_id": "VNBrain2-01KPB95SF17VAZHN9K6J5CZ2VX"
+  },
+  "id_kept_by_primary_source": {
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9": "fallback",
+    "1f73a7a1-46e5-409b-ab78-80382250a959": "fallback",
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e": "fallback",
+    "4e5f0e1f-35db-4c84-a626-132b87512675": "fallback",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752": "fallback",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416": "fallback",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146": "fallback",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda": "fallback"
+  },
+  "mode": "challenge",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.7,
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to legitimate large transactions.",
+      "Missing subtle patterns of declining well-being due to focusing solely on transaction amounts.",
+      "Failing to identify new forms of suspicious activity not captured by existing risk hints.",
+      "Overlooking users with fewer transactions but still exhibiting concerning patterns."
+    ],
+    "guardrails": [
+      "Cross-validate risk_hint values with transaction history and user profiles.",
+      "Implement a threshold for transaction amount to avoid flagging all large transactions.",
+      "Monitor for changes in transaction patterns over time to detect emerging threats.",
+      "Regularly review and update the risk_hint calculation based on new data and insights."
+    ],
+    "planner_confidence_0_to_1": 0.7,
+    "priority_signals": [
+      "High risk_hint values associated with large transaction amounts.",
+      "Multiple transactions from the same sender with decreasing amounts over time.",
+      "Transactions to recipients known for suspicious activity (if such information were available).",
+      "Unusual transaction types or locations for a given user.",
+      "Sudden changes in transaction frequency or amount compared to historical data."
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Focus on identifying transactions associated with users exhibiting potentially declining well-being. Prioritize users with high-value transactions and investigate their transaction history for patterns indicative of financial distress or unusual behavior. Use the risk_hint as a starting point, but validate with transaction history and user data."
+  },
+  "post_finalize_ids": [
+    "34a8ae7e-f9d1-49fc-965f-b50bd1f25e1e",
+    "4e5f0e1f-35db-4c84-a626-132b87512675",
+    "86bd7fd9-8cb3-4796-8465-47fe83c98416",
+    "89ebb4ba-7f16-40fb-835e-223e1df4c146",
+    "5a9ac786-14ff-4847-80c2-8a3844b0b752",
+    "0fe7506f-4d1e-4686-99d8-64be9ab176e9",
+    "1f73a7a1-46e5-409b-ab78-80382250a959",
+    "bb779be1-7cdc-4127-8c4c-12b01255ceda"
+  ],
+  "pre_finalize_ids": [],
+  "risk_elbow_cap": {
+    "applied": false,
+    "cap": null,
+    "eligible": false,
+    "reason": "not_checked"
+  },
+  "scorer_confidence_0_to_1": 0.5,
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.5,
+    "contradiction_signals": [],
+    "ranked": [],
+    "recommended_ids": []
+  },
+  "session_id": "VNBrain2-01KPB95SF17VAZHN9K6J5CZ2VX",
+  "status": "success"
+}

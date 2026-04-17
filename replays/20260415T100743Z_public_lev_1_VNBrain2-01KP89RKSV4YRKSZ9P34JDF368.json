@@ -1,0 +1,200 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 3909,
+    "output_tokens": 630,
+    "total_tokens": 4539
+  },
+  "budget_profile": "low",
+  "candidate_pool_ids_after_prune": [
+    "WNACROYX",
+    "DCGGXUWF",
+    "IXTDRHTR",
+    "IAFGUHCK",
+    "RFLFWVQA"
+  ],
+  "candidate_pool_size": 5,
+  "candidate_pool_size_after_prune": 5,
+  "candidate_pool_size_before_prune": 5,
+  "cap_applied": false,
+  "chain_path": "full-no-critic",
+  "contradiction_signals": [],
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX",
+      "DCGGXUWF"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "DCGGXUWF": "Negative activity and sleep slopes, positive exposure slope, and consecutive sleep declines suggest a concerning trend, especially given the advanced age.",
+      "WNACROYX": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep indicate a strong negative trend."
+    },
+    "selected_ids": [
+      "WNACROYX",
+      "DCGGXUWF"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX",
+    "DCGGXUWF"
+  ],
+  "finalize_debug": {
+    "anchor_source": "scorer",
+    "cap_applied": false,
+    "cap_is_hard_final": true,
+    "cap_limit": 3,
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": false,
+      "scorer_confidence_0_to_1": 0.9
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [],
+    "fallback_applied": false,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "DCGGXUWF": "scorer",
+      "WNACROYX": "scorer"
+    },
+    "id_kept_supporting_sources": {
+      "DCGGXUWF": [
+        "critic",
+        "extractor"
+      ],
+      "WNACROYX": [
+        "critic",
+        "extractor"
+      ]
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.2,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "scorer",
+        "critic",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "WNACROYX",
+      "DCGGXUWF"
+    ],
+    "pre_finalize_ids": [
+      "WNACROYX",
+      "DCGGXUWF"
+    ],
+    "source_ids": {
+      "critic": [
+        "WNACROYX",
+        "DCGGXUWF"
+      ],
+      "decider": [],
+      "extractor": [
+        "WNACROYX",
+        "DCGGXUWF"
+      ],
+      "scorer": [
+        "WNACROYX",
+        "DCGGXUWF"
+      ]
+    },
+    "source_votes": {
+      "DCGGXUWF": [
+        "critic",
+        "extractor",
+        "scorer"
+      ],
+      "WNACROYX": [
+        "critic",
+        "extractor",
+        "scorer"
+      ]
+    }
+  },
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 2,
+    "flagged_ratio": 0.4,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "8143ec5c4a7092ccee5b77791bec8b123b6b1a23eed57443faf327a484227dc9",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP89RKSV4YRKSZ9P34JDF368"
+  },
+  "id_kept_by_primary_source": {
+    "DCGGXUWF": "scorer",
+    "WNACROYX": "scorer"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.75,
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations misidentified as long-term trends.",
+      "Missing individuals with genuine but subtle declines across multiple indicators.",
+      "Over-reliance on risk_hint without considering underlying trends."
+    ],
+    "guardrails": [
+      "Require at least two indicators (activity, sleep, exposure) to show a concerning trend before flagging an individual.",
+      "Cross-validate slope direction with delta values to ensure consistency.",
+      "Avoid flagging individuals based solely on risk_hint; it should only be used to prioritize candidates with similar trend patterns."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "Negative activity_slope and sleep_slope",
+      "Positive exposure_slope",
+      "Consecutive declines in activity and sleep",
+      "High risk_hint score"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Prioritize citizens with multiple indicators of declining well-being (activity, sleep, and rising exposure). Focus on negative slopes and consecutive declines in activity and sleep, combined with positive slopes in exposure. Use risk_hint as a secondary sorting factor. Given the low budget, aim for high precision by focusing on strong signals."
+  },
+  "post_finalize_ids": [
+    "WNACROYX",
+    "DCGGXUWF"
+  ],
+  "pre_finalize_ids": [
+    "WNACROYX",
+    "DCGGXUWF"
+  ],
+  "scorer_confidence_0_to_1": 0.9,
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "Strong evidence of decline: high risk_hint, significant negative slopes in activity and sleep, positive exposure slope, and multiple consecutive declines in activity and sleep.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "DCGGXUWF",
+        "reason": "Moderate evidence of decline: negative activity and sleep slopes, positive exposure slope, and consecutive sleep declines. The advanced age adds to the concern.",
+        "score_0_to_100": 75
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX",
+      "DCGGXUWF"
+    ]
+  },
+  "session_id": "VNBrain2-01KP89RKSV4YRKSZ9P34JDF368",
+  "status": "success"
+}

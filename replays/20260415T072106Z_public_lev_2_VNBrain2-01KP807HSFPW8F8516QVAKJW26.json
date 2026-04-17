@@ -1,0 +1,105 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 5413,
+    "output_tokens": 736,
+    "total_tokens": 6149
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_result": {},
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "GGGZNWZD": "High risk hint, significant negative changes in both activity and sleep, and relatively young.",
+      "IGKMHDGI": "High risk hint, substantial negative changes in activity and sleep.",
+      "QOHAQRQI": "High risk hint, significant negative changes in both activity and sleep, and a younger age."
+    },
+    "selected_ids": [
+      "GGGZNWZD",
+      "IGKMHDGI",
+      "QOHAQRQI"
+    ]
+  },
+  "final_ids": [
+    "QOHAQRQI",
+    "GGGZNWZD",
+    "IGKMHDGI"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 3,
+    "flagged_ratio": 0.2,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "291cbd08aa7f4e631ba13bbca20eb37de86ac90fd73b820350c1e0ea8b1190b6",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP807HSFPW8F8516QVAKJW26"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to focusing solely on activity and sleep changes without considering individual circumstances.",
+      "Missing individuals with gradual well-being decline not reflected in large delta values.",
+      "Bias towards certain age groups or locations due to uneven data representation."
+    ],
+    "guardrails": [
+      "Ensure a diverse age range in the final selection to avoid age bias.",
+      "Cross-validate findings with other available data sources (if any) to reduce false positives.",
+      "Consider the context of each individual's location and access to resources."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta",
+      "age",
+      "city"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "The LLM will prioritize candidates with high risk hints and significant negative changes in activity and sleep averages. It will then consider age and location to refine the selection, focusing on younger individuals and those in larger cities where well-being resources might be more strained. Deterministic features are used as supporting evidence to guide the LLM's decision-making process."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.95,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "QOHAQRQI",
+        "reason": "Highest sleep delta (-49.00), high risk hint (5.00), significant activity delta (-33.00), and relatively young (34) in a large city (Houston).",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "GGGZNWZD",
+        "reason": "High risk hint (5.00), significant negative changes in both activity (-35.00) and sleep (-47.00), and relatively young (36).",
+        "score_0_to_100": 93
+      },
+      {
+        "id": "IGKMHDGI",
+        "reason": "High risk hint (5.00), substantial negative changes in activity (-33.00) and sleep (-38.00), though slightly older (43).",
+        "score_0_to_100": 90
+      }
+    ],
+    "recommended_ids": [
+      "QOHAQRQI",
+      "GGGZNWZD",
+      "IGKMHDGI"
+    ]
+  },
+  "session_id": "VNBrain2-01KP807HSFPW8F8516QVAKJW26",
+  "status": "success"
+}

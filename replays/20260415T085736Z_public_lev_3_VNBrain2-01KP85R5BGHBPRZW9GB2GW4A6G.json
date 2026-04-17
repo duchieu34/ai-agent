@@ -1,0 +1,126 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 15979,
+    "output_tokens": 984,
+    "total_tokens": 16963
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 30,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "NANSUMZD",
+      "ERGZRVUY"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_3",
+  "decider_result": {},
+  "dominant_single_cap_applied": false,
+  "effective_max_output_ids": 18,
+  "extractor_result": {
+    "rationale": {
+      "ERGZRVUY": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep.",
+      "NANSUMZD": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep.",
+      "QHIUGITL": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep.",
+      "UISLLTXM": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep.",
+      "UPPIPXVV": "High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep."
+    },
+    "selected_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "ERGZRVUY",
+      "NANSUMZD"
+    ]
+  },
+  "final_ids": [
+    "UPPIPXVV",
+    "QHIUGITL",
+    "UISLLTXM",
+    "NANSUMZD",
+    "ERGZRVUY"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_3",
+    "flagged_count": 5,
+    "flagged_ratio": 0.16666666666666666,
+    "input_sha256": "e72f15fce9f2b2bcad14c4bc55bff22402b3d0dd109db16f9a31228dfa9115a9",
+    "mode": "sandbox",
+    "output_sha256": "ca317989933a42e7b889bbd8efd43973b4ed248aca68bb8a7cefab502ed38bcb",
+    "phase": "training",
+    "population_count": 30,
+    "session_id": "VNBrain2-01KP85R5BGHBPRZW9GB2GW4A6G"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations misidentified as long-term trends.",
+      "Missing individuals with genuine but less pronounced declines.",
+      "Over-reliance on deterministic features, neglecting nuanced patterns."
+    ],
+    "guardrails": [
+      "Cross-validate signals across activity, sleep, and exposure metrics.",
+      "Avoid flagging individuals with only one declining metric.",
+      "Consider the magnitude of the slopes and deltas, not just the direction.",
+      "Be cautious of individuals with high absolute activity/sleep values but small declines."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "Negative activity_slope and sleep_slope",
+      "Positive exposure_slope",
+      "High activity_consec_declines and sleep_consec_declines",
+      "High risk_hint"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Focus on identifying citizens with declining activity and sleep indices, coupled with rising environmental exposure, as indicators of suboptimal well-being trajectories. Prioritize candidates with multiple consecutive declines and negative slopes in activity and sleep, and positive slopes in exposure. Leverage risk_hint as a secondary sorting signal."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.95,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "UPPIPXVV",
+        "reason": "Strong evidence: High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep. High delta values.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "QHIUGITL",
+        "reason": "Strong evidence: High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep. High delta values.",
+        "score_0_to_100": 93
+      },
+      {
+        "id": "UISLLTXM",
+        "reason": "Strong evidence: High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep. High delta values.",
+        "score_0_to_100": 92
+      },
+      {
+        "id": "NANSUMZD",
+        "reason": "Strong evidence: High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep. High delta values.",
+        "score_0_to_100": 90
+      },
+      {
+        "id": "ERGZRVUY",
+        "reason": "Strong evidence: High risk_hint, negative activity and sleep slopes, positive exposure slope, and multiple consecutive declines in activity and sleep. High delta values.",
+        "score_0_to_100": 88
+      }
+    ],
+    "recommended_ids": [
+      "UPPIPXVV",
+      "QHIUGITL",
+      "UISLLTXM",
+      "NANSUMZD",
+      "ERGZRVUY"
+    ]
+  },
+  "session_id": "VNBrain2-01KP85R5BGHBPRZW9GB2GW4A6G",
+  "status": "success"
+}

@@ -1,0 +1,68 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 2797,
+    "output_tokens": 285,
+    "total_tokens": 3082
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "fast",
+  "critic_ran": false,
+  "critic_result": {},
+  "dataset_key": "public_lev_2",
+  "decider_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.85,
+    "final_ids": [
+      "GGGZNWZD",
+      "IGKMHDGI",
+      "QOHAQRQI"
+    ],
+    "reason": "Selected citizens have high risk hints and significant declines in well-being metrics."
+  },
+  "effective_max_output_ids": 9,
+  "extractor_result": {},
+  "final_ids": [
+    "GGGZNWZD",
+    "IGKMHDGI",
+    "QOHAQRQI"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 3,
+    "flagged_ratio": 0.2,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "635a15f8ba120e5534a4ca20a4959a96c8f6d9360a82af6595f2f09f38ff346e",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP80RS16EAF7FZ9WA1F03RMZ"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Overlooking citizens with lower risk hints but significant declines in well-being metrics.",
+      "Misclassifying citizens due to insufficient data points or anomalies in the dataset.",
+      "Focusing solely on high-risk hints without considering overall well-being trends."
+    ],
+    "guardrails": [
+      "Ensure a balanced approach by considering both high risk hints and significant negative changes in well-being metrics.",
+      "Validate findings with additional data sources if available.",
+      "Regularly review and update the criteria for identifying suboptimal well-being trajectories."
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta",
+      "exposure_delta"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "Identify citizens with the highest risk hints and significant declines in well-being metrics (activity, sleep, exposure) to prioritize interventions."
+  },
+  "scorer_result": {},
+  "session_id": "VNBrain2-01KP80RS16EAF7FZ9WA1F03RMZ",
+  "status": "success"
+}

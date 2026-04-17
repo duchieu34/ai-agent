@@ -1,0 +1,90 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 5371,
+    "output_tokens": 619,
+    "total_tokens": 5990
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 15,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "QOHAQRQI"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_2",
+  "decider_result": {},
+  "effective_max_output_ids": 1,
+  "extractor_result": {
+    "rationale": {
+      "GGGZNWZD": "High risk hint (5.00) and significant negative changes in both activity (-35.00) and sleep (-47.00) averages.",
+      "QOHAQRQI": "High risk hint (5.00) and significant negative changes in both activity (-33.00) and sleep (-49.00) averages."
+    },
+    "selected_ids": [
+      "GGGZNWZD",
+      "QOHAQRQI"
+    ]
+  },
+  "final_ids": [
+    "QOHAQRQI"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_2",
+    "flagged_count": 1,
+    "flagged_ratio": 0.06666666666666667,
+    "input_sha256": "6d6f441df6af21e92a956357b1b46185a0600c18d6dd723c0d4058343a2cadf6",
+    "mode": "sandbox",
+    "output_sha256": "ddd6ddc8906bb7c78afafeda4780301e77c77e312ee1e2866ea43a2372dc5ec9",
+    "phase": "training",
+    "population_count": 15,
+    "session_id": "VNBrain2-01KP8072FF3TCEG8962Y0GB2CD"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to short-term fluctuations.",
+      "Missing individuals with gradual well-being decline not reflected in large delta values.",
+      "Bias towards individuals with higher initial activity and sleep averages."
+    ],
+    "guardrails": [
+      "Cross-validate findings with other available data sources (if any).",
+      "Consider age and location when interpreting activity and sleep patterns.",
+      "Implement a feedback loop to refine the detection criteria over time."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "risk_hint",
+      "activity_delta",
+      "sleep_delta"
+    ],
+    "route_recommendation": "fast",
+    "strategy": "The LLM will prioritize candidates with high risk hints and significant negative changes in activity and sleep averages, indicating potential well-being decline. The deterministic features will be used to support the LLM's decision-making process. Given the low budget profile, the LLM will focus on the top candidates based on the risk hints and delta values."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "QOHAQRQI",
+        "reason": "High risk hint (5.00) and significant negative changes in both activity (-33.00) and sleep (-49.00) averages, indicating a potential well-being decline.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "GGGZNWZD",
+        "reason": "High risk hint (5.00) and significant negative changes in both activity (-35.00) and sleep (-47.00) averages, indicating a potential well-being decline.",
+        "score_0_to_100": 94
+      }
+    ],
+    "recommended_ids": [
+      "QOHAQRQI"
+    ]
+  },
+  "session_id": "VNBrain2-01KP8072FF3TCEG8962Y0GB2CD",
+  "status": "success"
+}

@@ -1,0 +1,98 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 3939,
+    "output_tokens": 770,
+    "total_tokens": 4709
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_result": {},
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "WNACROYX": "Shows significant negative slopes in both activity and sleep, coupled with a rising exposure slope and multiple consecutive declines in activity. This indicates a clear deteriorating well-being trajectory."
+    },
+    "selected_ids": [
+      "WNACROYX"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 1,
+    "flagged_ratio": 0.2,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "af346cc8b4318c21bf24743f8b946e501c08b826579d4b0e5be0129ce6f6a89e",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP84TRGQ0X1EYJ0AV80HHPY2"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "Over-reliance on 'risk_hint' without considering trajectory.",
+      "Missing true positives due to insufficient lookback period for trend analysis.",
+      "False positives from short-term fluctuations misidentified as trends.",
+      "Ignoring cross-indicator patterns, leading to weaker signal detection."
+    ],
+    "guardrails": [
+      "Ensure that 'suboptimal trajectory' is defined by declining trends, not just low absolute values.",
+      "Prioritize candidates with multiple declining indicators.",
+      "Validate trajectory signals with sufficient data points.",
+      "Maintain a balance between precision and recall in the identification process."
+    ],
+    "planner_confidence_0_to_1": 0.9,
+    "priority_signals": [
+      "activity_slope < 0",
+      "sleep_slope < 0",
+      "activity_consec_declines > 1",
+      "sleep_consec_declines > 1",
+      "exposure_slope > 0",
+      "simultaneous declines in activity and sleep"
+    ],
+    "route_recommendation": "full",
+    "strategy": "Identify citizens with suboptimal well-being trajectories by prioritizing those exhibiting multiple indicators of decline. Focus on negative slopes in activity and sleep, consecutive declines, and rising environmental exposure. Cross-indicator patterns will be weighted higher. The 'risk_hint' feature will be used as an initial filter, but trajectory analysis is paramount."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.9,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "Strong negative slopes in both activity (-3.915) and sleep (-2.467), multiple consecutive declines in activity (4) and sleep (3), and a rising exposure slope (4.830). This indicates a clear and concerning suboptimal well-being trajectory across multiple indicators.",
+        "score_0_to_100": 95
+      },
+      {
+        "id": "DCGGXUWF",
+        "reason": "Has a negative activity slope (-0.503) and consecutive declines in sleep (2), but sleep slope is only slightly negative (-0.212) and exposure slope is positive (0.521). The overall trajectory is less concerning than WNACROYX.",
+        "score_0_to_100": 40
+      },
+      {
+        "id": "IXTDRHTR",
+        "reason": "Has consecutive declines in activity (2) and sleep (2), but activity slope is near zero (-0.006) and sleep slope is positive (0.552). Exposure slope is also positive (0.352). The trajectory is not clearly suboptimal.",
+        "score_0_to_100": 20
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX"
+    ]
+  },
+  "session_id": "VNBrain2-01KP84TRGQ0X1EYJ0AV80HHPY2",
+  "status": "success"
+}

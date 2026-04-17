@@ -1,0 +1,227 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 17550,
+    "output_tokens": 2876,
+    "total_tokens": 20426
+  },
+  "budget_profile": "low",
+  "candidate_pool_ids_after_prune": [
+    "44fdd50c-73f4-4f0d-8b03-0409ebd8890b",
+    "0d3ace95-9e82-41c7-a26b-203b8b792d24",
+    "97c83f82-853e-4466-b4aa-7457625fa242",
+    "255834d5-c7c9-4311-804f-5abe227dea1f",
+    "6212031b-aec1-43fe-8818-a448e17e91eb",
+    "02c1c8e3-b088-4958-a047-0d32beb78292",
+    "d4de1c65-dc9e-4172-a158-ce2db0d214e2",
+    "4e53a923-af56-41e4-a804-67721ded06b7",
+    "ea8d19b0-8364-4f2e-93ef-43e511d9ca7b",
+    "1ac1500c-78d7-4f3a-8daa-ecdb877b2bad",
+    "b54bb23c-6703-4d7b-8149-411205534ef9",
+    "243504e1-f5a9-4ded-8262-d5b8a51cc1b9",
+    "f8efb252-3303-4666-a1db-1633bcfab23e",
+    "ed75ad30-d656-479b-9cca-06278aa87e62",
+    "139def3a-22bd-4465-90fa-d37d49f13070",
+    "60929f96-b7a3-476b-b1f8-9a60298bea98",
+    "1ad62197-c368-4a1f-8286-22a811f5291e",
+    "97bd8902-d29a-4041-b7ec-d8f1456bef42",
+    "3b41422b-60f2-4d59-838b-de85b5f2f6c7",
+    "1ede528a-c212-4d30-8e62-e901ca537f83",
+    "9bdb7dc1-1804-447d-8eb9-a4146f27cd6b",
+    "52597177-e7c7-4bfd-9a18-eaa96db4123a",
+    "dcd4abb5-035a-42dc-b963-dd23a008eeaa",
+    "4af1fdf6-8b4e-4d2b-ab32-97e2cd197792",
+    "ea9f3acb-d2af-4b42-8588-9a7eb7823137",
+    "fff9978c-8395-490a-95a1-8347bc751a2b",
+    "eee4f7cb-10ba-4f01-8a43-37cc11c74371",
+    "0f400ab9-1f74-41ac-ba58-73d2aac629d4",
+    "1539373e-e909-4fcd-ba67-9f97ea4688bf",
+    "5a3577a7-61e9-42b2-b8f1-a87d7e6fab4e",
+    "fce0c8bf-d8d8-4f3c-b29f-252867e15164",
+    "6650b3a2-f3e6-450a-80b6-5a54a14cbca8",
+    "07e4b774-7ea2-4ca0-bb9d-d1e95a728b03",
+    "7af2c254-522a-46e5-b50a-030653b16f2a",
+    "875367bb-b33a-40d4-bfed-7e9e0c5f6a46",
+    "6d85d330-aebe-4fd7-b6ee-e8b09640ab8e",
+    "0fd6eeff-e363-4bc9-a099-8f70e73e9884",
+    "1f219c1d-fd99-47d6-b097-44253f85accb",
+    "f2798f49-f35c-4ecc-943e-30ee3d833c35",
+    "a839c005-7c5c-4e2d-b8d2-f07e99d7aedf"
+  ],
+  "candidate_pool_size": 40,
+  "candidate_pool_size_after_prune": 40,
+  "candidate_pool_size_before_prune": 80,
+  "cap_applied": false,
+  "chain_path": "full-with-critic",
+  "contradiction_signals": [],
+  "critic_ran": true,
+  "critic_result": {
+    "critic_notes": "",
+    "final_ids": [],
+    "rejected_ids": []
+  },
+  "dataset_key": "lev1_train",
+  "decider_confidence_0_to_1": 0.5,
+  "decider_result": {},
+  "decision_profile": "precision_first",
+  "effective_max_output_ids": 24,
+  "extractor_result": {
+    "rationale": {},
+    "selected_ids": []
+  },
+  "final_ids": [
+    "44fdd50c-73f4-4f0d-8b03-0409ebd8890b",
+    "0d3ace95-9e82-41c7-a26b-203b8b792d24",
+    "97c83f82-853e-4466-b4aa-7457625fa242",
+    "255834d5-c7c9-4311-804f-5abe227dea1f",
+    "6212031b-aec1-43fe-8818-a448e17e91eb",
+    "02c1c8e3-b088-4958-a047-0d32beb78292",
+    "d4de1c65-dc9e-4172-a158-ce2db0d214e2",
+    "4e53a923-af56-41e4-a804-67721ded06b7"
+  ],
+  "finalize_debug": {
+    "anchor_source": "",
+    "cap_applied": false,
+    "cap_is_hard_final": true,
+    "cap_limit": 24,
+    "confidence_snapshot": {
+      "decider_abstain": false,
+      "decider_confidence_0_to_1": 0.5,
+      "scorer_abstain": true,
+      "scorer_confidence_0_to_1": 0.5
+    },
+    "contradiction_signals": [],
+    "critic_rejected_ids": [],
+    "fallback_applied": true,
+    "filtered_out_ids": [],
+    "id_kept_by_primary_source": {
+      "02c1c8e3-b088-4958-a047-0d32beb78292": "fallback",
+      "0d3ace95-9e82-41c7-a26b-203b8b792d24": "fallback",
+      "255834d5-c7c9-4311-804f-5abe227dea1f": "fallback",
+      "44fdd50c-73f4-4f0d-8b03-0409ebd8890b": "fallback",
+      "4e53a923-af56-41e4-a804-67721ded06b7": "fallback",
+      "6212031b-aec1-43fe-8818-a448e17e91eb": "fallback",
+      "97c83f82-853e-4466-b4aa-7457625fa242": "fallback",
+      "d4de1c65-dc9e-4172-a158-ce2db0d214e2": "fallback"
+    },
+    "id_kept_supporting_sources": {
+      "02c1c8e3-b088-4958-a047-0d32beb78292": [],
+      "0d3ace95-9e82-41c7-a26b-203b8b792d24": [],
+      "255834d5-c7c9-4311-804f-5abe227dea1f": [],
+      "44fdd50c-73f4-4f0d-8b03-0409ebd8890b": [],
+      "4e53a923-af56-41e4-a804-67721ded06b7": [],
+      "6212031b-aec1-43fe-8818-a448e17e91eb": [],
+      "97c83f82-853e-4466-b4aa-7457625fa242": [],
+      "d4de1c65-dc9e-4172-a158-ce2db0d214e2": []
+    },
+    "policy": {
+      "critic_is_veto": true,
+      "decider_anchor_confidence": 0.92,
+      "fallback_ratio": 0.2,
+      "min_votes_for_non_anchor": 2,
+      "scorer_override_confidence": 0.9,
+      "source_priority": [
+        "critic",
+        "scorer",
+        "decider",
+        "extractor"
+      ]
+    },
+    "policy_profile": "precision_first",
+    "post_finalize_ids": [
+      "44fdd50c-73f4-4f0d-8b03-0409ebd8890b",
+      "0d3ace95-9e82-41c7-a26b-203b8b792d24",
+      "97c83f82-853e-4466-b4aa-7457625fa242",
+      "255834d5-c7c9-4311-804f-5abe227dea1f",
+      "6212031b-aec1-43fe-8818-a448e17e91eb",
+      "02c1c8e3-b088-4958-a047-0d32beb78292",
+      "d4de1c65-dc9e-4172-a158-ce2db0d214e2",
+      "4e53a923-af56-41e4-a804-67721ded06b7"
+    ],
+    "pre_finalize_ids": [],
+    "source_ids": {
+      "critic": [],
+      "decider": [],
+      "extractor": [],
+      "scorer": []
+    },
+    "source_votes": {}
+  },
+  "firewall_report": {
+    "dataset_key": "lev1_train",
+    "flagged_count": 8,
+    "flagged_ratio": 0.2,
+    "input_sha256": "3543f8fad103328ccebee672223a206e706927f338a2b0a1093ac2a6e8629421",
+    "mode": "challenge",
+    "output_sha256": "6af800d4bba51307201088c28f6dca884fac10a23c5498d21da4d1ee708b1e0b",
+    "phase": "training",
+    "population_count": 40,
+    "session_id": "VNBrain2-01KPB92VC0R27JE9V3E9CA3XZQ"
+  },
+  "id_kept_by_primary_source": {
+    "02c1c8e3-b088-4958-a047-0d32beb78292": "fallback",
+    "0d3ace95-9e82-41c7-a26b-203b8b792d24": "fallback",
+    "255834d5-c7c9-4311-804f-5abe227dea1f": "fallback",
+    "44fdd50c-73f4-4f0d-8b03-0409ebd8890b": "fallback",
+    "4e53a923-af56-41e4-a804-67721ded06b7": "fallback",
+    "6212031b-aec1-43fe-8818-a448e17e91eb": "fallback",
+    "97c83f82-853e-4466-b4aa-7457625fa242": "fallback",
+    "d4de1c65-dc9e-4172-a158-ce2db0d214e2": "fallback"
+  },
+  "mode": "challenge",
+  "phase": "training",
+  "planner_confidence_0_to_1": 0.75,
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to normal fluctuations in transaction behavior.",
+      "Missing true positives due to insufficient transaction history or subtle declining trends.",
+      "Incorrectly attributing risk based on a single transaction without considering the overall pattern.",
+      "Overlooking complex patterns that require more sophisticated analysis than simple trend detection."
+    ],
+    "guardrails": [
+      "Establish a baseline transaction pattern for each entity to identify deviations.",
+      "Use a rolling window approach to analyze transaction trends and avoid being overly sensitive to short-term fluctuations.",
+      "Implement a threshold for the magnitude of decline required to trigger an alert.",
+      "Cross-validate findings with other available data sources (e.g., user profiles, location data).",
+      "Avoid making assumptions based on limited data; prioritize entities with sufficient transaction history."
+    ],
+    "planner_confidence_0_to_1": 0.75,
+    "priority_signals": [
+      "High risk_hint values",
+      "Decreasing transaction amounts over time for a given sender_id/recipient_id",
+      "Increasing frequency of small transactions for a given sender_id/recipient_id",
+      "Large amounts followed by smaller amounts",
+      "Transactions to/from entities with known vulnerabilities (if user data is available)",
+      "Sudden changes in transaction patterns (e.g., type, location)"
+    ],
+    "route_recommendation": "full",
+    "strategy": "Focus on identifying transactions associated with potentially declining financial well-being. Prioritize entities with a high risk_hint and investigate their transaction history for patterns of decreasing amounts or increasing frequency of smaller transactions. Since we are looking for *declining trends*, time series analysis of transaction amounts for each entity is crucial. Cross-reference with user data (if available) to understand the context of these transactions (e.g., job loss, change in residence)."
+  },
+  "post_finalize_ids": [
+    "44fdd50c-73f4-4f0d-8b03-0409ebd8890b",
+    "0d3ace95-9e82-41c7-a26b-203b8b792d24",
+    "97c83f82-853e-4466-b4aa-7457625fa242",
+    "255834d5-c7c9-4311-804f-5abe227dea1f",
+    "6212031b-aec1-43fe-8818-a448e17e91eb",
+    "02c1c8e3-b088-4958-a047-0d32beb78292",
+    "d4de1c65-dc9e-4172-a158-ce2db0d214e2",
+    "4e53a923-af56-41e4-a804-67721ded06b7"
+  ],
+  "pre_finalize_ids": [],
+  "risk_elbow_cap": {
+    "applied": false,
+    "cap": null,
+    "eligible": false,
+    "reason": "not_checked"
+  },
+  "scorer_confidence_0_to_1": 0.5,
+  "scorer_result": {
+    "abstain": true,
+    "confidence_0_to_1": 0.5,
+    "contradiction_signals": [],
+    "ranked": [],
+    "recommended_ids": []
+  },
+  "session_id": "VNBrain2-01KPB92VC0R27JE9V3E9CA3XZQ",
+  "status": "success"
+}

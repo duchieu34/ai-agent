@@ -1,0 +1,85 @@
+{
+  "budget": {
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 3084,
+    "output_tokens": 400,
+    "total_tokens": 3484
+  },
+  "budget_profile": "low",
+  "candidate_pool_size": 5,
+  "chain_path": "full-no-critic",
+  "critic_ran": false,
+  "critic_result": {
+    "critic_notes": "Critic skipped by confidence gate.",
+    "final_ids": [
+      "WNACROYX"
+    ],
+    "rejected_ids": []
+  },
+  "dataset_key": "public_lev_1",
+  "decider_result": {},
+  "effective_max_output_ids": 3,
+  "extractor_result": {
+    "rationale": {
+      "WNACROYX": "This candidate shows a significant negative slope in both activity (-3.915) and sleep (-2.467) indices, with multiple consecutive declines in both metrics (4 in activity and 3 in sleep). Additionally, there is a rising environmental exposure trend, indicating a concerning trajectory."
+    },
+    "selected_ids": [
+      "WNACROYX"
+    ]
+  },
+  "final_ids": [
+    "WNACROYX"
+  ],
+  "firewall_report": {
+    "dataset_key": "public_lev_1",
+    "flagged_count": 1,
+    "flagged_ratio": 0.2,
+    "input_sha256": "7481fa84d0dbdaf412b1cfd883fec294376ab21a7a95b93b05dfb15270de3a4f",
+    "mode": "sandbox",
+    "output_sha256": "af346cc8b4318c21bf24743f8b946e501c08b826579d4b0e5be0129ce6f6a89e",
+    "phase": "training",
+    "population_count": 5,
+    "session_id": "VNBrain2-01KP8400MMTVP56FPVR0Q1ZM9Z"
+  },
+  "mode": "sandbox",
+  "phase": "training",
+  "planner_result": {
+    "failure_modes": [
+      "False positives due to isolated declines in one metric",
+      "Missing true positives with mild declines",
+      "Overlooking environmental exposure trends"
+    ],
+    "guardrails": [
+      "Ensure multiple metrics are declining before flagging",
+      "Balance precision and recall to avoid missing critical cases",
+      "Regularly update thresholds based on new data"
+    ],
+    "planner_confidence_0_to_1": 0.85,
+    "priority_signals": [
+      "activity_slope < 0",
+      "sleep_slope < 0",
+      "activity_consec_declines >= 3",
+      "sleep_consec_declines >= 3",
+      "cross-indicator declines"
+    ],
+    "route_recommendation": "full",
+    "strategy": "Identify citizens with declining well-being trajectories by analyzing activity and sleep indices for negative slopes and consecutive declines, while considering cross-indicator patterns."
+  },
+  "scorer_result": {
+    "abstain": false,
+    "confidence_0_to_1": 0.85,
+    "contradiction_signals": [],
+    "ranked": [
+      {
+        "id": "WNACROYX",
+        "reason": "Strong evidence: significant negative slopes in both activity and sleep, with multiple consecutive declines in both metrics.",
+        "score_0_to_100": 95
+      }
+    ],
+    "recommended_ids": [
+      "WNACROYX"
+    ]
+  },
+  "session_id": "VNBrain2-01KP8400MMTVP56FPVR0Q1ZM9Z",
+  "status": "success"
+}
